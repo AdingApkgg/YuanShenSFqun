@@ -10,7 +10,7 @@ html {
 
 body {
     background: linear-gradient(125deg,#5433ff, #20bdff, #a5fecb);
-    background-size: 300%;
+    background-size: 200%;
     background-attachment: fixed;
     animation: bganimation 15s infinite;
 }
@@ -29,11 +29,6 @@ body {
         background-position: 0% 50%;
     }
 
-}
-
-@font-face {
-    font-family: HYWenHei-85W;
-    src: url(../font/HYWenHei-85W.woff2);
 }
 
 a {
@@ -61,7 +56,7 @@ p {
     color: rgb(255, 255, 255);
     font-size: 6em;
     font-weight: 500;
-    font-family: HYWenHei-85W;
+    font-family: serif;
     user-select: none;
 }
 
@@ -69,7 +64,7 @@ p {
     color: rgb(250, 250, 250);
     font-size: 1.6em;
     font-weight: 500;
-    font-family: HYWenHei-85W;
+    font-family: serif;
     user-select: none;
 }
 
@@ -132,14 +127,14 @@ p {
     color: rgb(51, 51, 51);
     font-size: 4em;
     font-weight: 500;
-    font-family: HYWenHei-85W;
+    font-family: serif;
 }
 
 .p_title_2 {
     color: rgb(51, 51, 51);
     font-size: 1.6em;
     font-weight: 500;
-    font-family: HYWenHei-85W;
+    font-family: serif;
 }
 
 .box_bottom_1 {
@@ -163,14 +158,14 @@ p {
     color: rgb(250, 250, 250);
     font-size: 1em;
     font-weight: 500;
-    font-family: HYWenHei-85W;
+    font-family: serif;
     user-select: none;
 }
 
 .box_bottom_1 a {
     font-size: 2em;
     font-weight: 500;
-    font-family: HYWenHei-85W;
+    font-family: serif;
 }
 
 .bottom_icon svg {
@@ -278,7 +273,7 @@ p {
 .box ul li p {
     font-size: 2em;
     font-weight: 500;
-    font-family: HYWenHei-85W;
+    font-family: serif;
     color: rgba(51, 51, 51, 0.9);
     display: flex;
 }
