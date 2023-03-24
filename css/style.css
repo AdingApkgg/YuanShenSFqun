@@ -9,10 +9,10 @@ html {
 }
 
 body {
-    background: linear-gradient(125deg,#5433ff, #20bdff, #a5fecb);
+    background: linear-gradient(125deg,#f64f59, #c471ed, #12c2e9);
     background-size: 200%;
     background-attachment: fixed;
-    animation: bganimation 15s infinite;
+    animation: bganimation 10s infinite;
 }
 
 @keyframes bganimation {
