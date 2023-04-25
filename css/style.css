@@ -199,7 +199,6 @@ p {
     float: left;
     border: 5px solid rgba(255, 255, 255, 0.3);
     background: rgba(255, 255, 255, 0.6);
-    backdrop-filter: blur(6px);
     border-radius: 20px;
     box-shadow: rgba(51, 51, 51, 0.3) 0 0 3px 0;
 }
@@ -346,7 +345,6 @@ p {
     background: linear-gradient(125deg, rgba(51,51,51), rgba(100,100,100));
     background-size: 170%;
     animation: bganimation 10s infinite;
-    backdrop-filter: blur(6px);
     border-radius: 15px;
     margin: 0;
     top: 50%; right: 0; bottom: 0; left: 50%;
