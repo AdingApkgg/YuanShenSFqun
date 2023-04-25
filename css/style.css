@@ -9,7 +9,7 @@ html {
 }
 
 body {
-    background: linear-gradient(125deg,#f64f59, #c471ed, #12c2e9);
+    background: linear-gradient(125deg, #f64f59, #c471ed, #12c2e9);
     background-size: 200%;
     background-attachment: fixed;
     animation: bganimation 10s infinite;
@@ -118,7 +118,7 @@ p {
 }
 
 .box_title_2_a:hover {
-    background: rgb(255,200,240);
+    background: rgb(255, 200, 240);
 }
 
 .h1_title_2 {
@@ -335,29 +335,35 @@ p {
 }
 
 #donate_svg {
-    width: 40px; height: 40px;
+    width: 40px;
+    height: 40px;
 }
 
 .donate_ul {
     display: none;
     position: fixed;
-    width: 800px; height: 420px;
-    background: linear-gradient(125deg, rgba(51,51,51), rgba(100,100,100));
+    width: 800px;
+    height: 420px;
+    background: linear-gradient(125deg, rgba(51, 51, 51), rgba(100, 100, 100));
     background-size: 170%;
     animation: bganimation 10s infinite;
     border-radius: 15px;
     margin: 0;
-    top: 50%; right: 0; bottom: 0; left: 50%;
-    transform: translate(-50%,-50%);
-    border: 5px rgb(255,200,240) solid;
+    top: 50%;
+    right: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 5px rgb(255, 200, 240) solid;
     align-items: center;
     justify-content: center;
-    list-style-type:none;
+    list-style-type: none;
 }
 
 .donate_ul img {
-    
-    width: 240px; height: 280px;
+
+    width: 240px;
+    height: 280px;
 }
 
 .donate_ul p {
@@ -366,17 +372,21 @@ p {
     color: rgb(255, 255, 255);
     font-size: 2em;
     font-weight: 500;
-    background: rgba(255,205,255,0.7);
+    background: rgba(255, 205, 255, 0.7);
 }
 
 .donate_title_top {
     position: absolute;
-    top: 0; right: 0; bottom: 1; left: 0;
+    top: 0;
+    right: 0;
+    bottom: 1;
+    left: 0;
     border-bottom-right-radius: 120px;
     color: rgb(255, 255, 255);
     font-size: 2em;
-    width: 120px; height: 30px;
-    background: rgba(255,205,255,0.9);
+    width: 120px;
+    height: 30px;
+    background: rgba(255, 205, 255, 0.9);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -384,31 +394,41 @@ p {
 
 .donate_title_bottom {
     position: absolute;
-    top: 1; right: 0; bottom: 0; left: 0;
+    top: 1;
+    right: 0;
+    bottom: 0;
+    left: 0;
     border-top-right-radius: unset;
     border-top-left-radius: unset;
     color: rgb(255, 255, 255);
     font-size: 2em;
-    width: 100%; height: 30px;
-    background: rgba(255,205,255,0.9);
+    width: 100%;
+    height: 30px;
+    background: rgba(255, 205, 255, 0.9);
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.donate:hover .donate_ul  {
+.donate:hover .donate_ul {
     display: flex;
 }
 
 /* Aplayer音乐标签伸缩 */
-.aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
-  left: -66px !important;
-  /* 默认情况下缩进左侧66px，只留一点箭头部分 */
-}
+/* Width的值可根据喜好调整（屏幕的宽度） */
+@media (max-width: 960px) {
 
-.aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
-  left: 0 !important;
-  /* 鼠标悬停是左侧缩进归零，完全显示按钮 */
+    /* Aplayer音乐标签伸缩 */
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
+        left: -66px !important;
+        /* 默认情况下缩进左侧66px，只留一点箭头部分 */
+    }
+
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
+        left: 0 !important;
+        /* 鼠标悬停是左侧缩进归零，完全显示按钮 */
+    }
+
 }
 
 @media(max-width:700px) {
@@ -488,27 +508,31 @@ p {
         color: rgb(255, 0, 0);
         font-size: 1.4em;
     }
-    
+
     .donate_ul {
-        width: 96%; height: 200px;
+        width: 96%;
+        height: 200px;
     }
-    
+
     .donate_ul img {
-        width: 100px; height: 125px;
+        width: 100px;
+        height: 125px;
     }
-    
+
     .donate_ul p {
         font-size: 1em;
     }
-    
+
     .donate_title_top {
         border-bottom-right-radius: 120px;
         font-size: 2em;
-        width: 80px; height: 20px;
+        width: 80px;
+        height: 20px;
     }
-    
+
     .donate_title_bottom {
         font-size: 2em;
-        width: 100%; height: 25px;
+        width: 100%;
+        height: 25px;
     }
 }
