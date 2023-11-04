@@ -17,6 +17,7 @@
         window.FontAwesomeKitConfig = { "asyncLoading": { "enabled": true }, "autoA11y": { "enabled": true }, "baseUrl": "https://kit-free.fontawesome.com", "license": "free", "method": "css", "minify": { "enabled": true }, "v4shim": { "enabled": false }, "version": "latest" };
         !function () { !function () { if (!(void 0 === window.Element || "classList" in document.documentElement)) { var e, t, n, i = Array.prototype, o = i.push, a = i.splice, s = i.join; r.prototype = { add: function (e) { this.contains(e) || (o.call(this, e), this.el.className = this.toString()) }, contains: function (e) { return -1 != this.el.className.indexOf(e) }, item: function (e) { return this[e] || null }, remove: function (e) { if (this.contains(e)) { for (var t = 0; t < this.length && this[t] != e; t++); a.call(this, t, 1), this.el.className = this.toString() } }, toString: function () { return s.call(this, " ") }, toggle: function (e) { return this.contains(e) ? this.remove(e) : this.add(e), this.contains(e) } }, window.DOMTokenList = r, e = Element.prototype, t = "classList", n = function () { return new r(this) }, Object.defineProperty ? Object.defineProperty(e, t, { get: n }) : e.__defineGetter__(t, n) } function r(e) { for (var t = (this.el = e).className.replace(/^\s+|\s+$/g, "").split(/\s+/), n = 0; n < t.length; n++)o.call(this, t[n]) } }(); function f(e) { var t, n, i, o; prefixesArray = e || ["fa"], prefixesSelectorString = "." + Array.prototype.join.call(e, ",."), t = document.querySelectorAll(prefixesSelectorString), Array.prototype.forEach.call(t, function (e) { n = e.getAttribute("title"), e.setAttribute("aria-hidden", "true"), i = !e.nextElementSibling || !e.nextElementSibling.classList.contains("sr-only"), n && i && ((o = document.createElement("span")).innerHTML = n, o.classList.add("sr-only"), e.parentNode.insertBefore(o, e.nextSibling)) }) } var e, t, u = function (e) { var t = document.createElement("link"); t.href = e, t.media = "all", t.rel = "stylesheet", document.getElementsByTagName("head")[0].appendChild(t) }, m = function (e) { !function (e, t, n) { var i, o = window.document, a = o.createElement("link"); if (t) i = t; else { var s = (o.body || o.getElementsByTagName("head")[0]).childNodes; i = s[s.length - 1] } var r = o.styleSheets; a.rel = "stylesheet", a.href = e, a.media = "only x", function e(t) { if (o.body) return t(); setTimeout(function () { e(t) }) }(function () { i.parentNode.insertBefore(a, t ? i : i.nextSibling) }); var l = function (e) { for (var t = a.href, n = r.length; n--;)if (r[n].href === t) return e(); setTimeout(function () { l(e) }) }; function c() { a.addEventListener && a.removeEventListener("load", c), a.media = n || "all" } a.addEventListener && a.addEventListener("load", c), (a.onloadcssdefined = l)(c) }(e) }, n = function (e, t) { var n = t && void 0 !== t.autoFetchSvg ? t.autoFetchSvg : void 0, i = t && void 0 !== t.async ? t.async : void 0, o = t && void 0 !== t.autoA11y ? t.autoA11y : void 0, a = document.createElement("script"), s = document.scripts[0]; a.src = e, void 0 !== o && a.setAttribute("data-auto-a11y", o ? "true" : "false"), n && (a.setAttributeNode(document.createAttribute("data-auto-fetch-svg")), a.setAttribute("data-fetch-svg-from", t.fetchSvgFrom)), i && a.setAttributeNode(document.createAttribute("defer")), s.parentNode.appendChild(a) }; function h(e, t) { var n = t && t.shim ? e.license + "-v4-shims" : e.license, i = t && t.minify ? ".min" : ""; return e.baseUrl + "/releases/" + ("latest" === e.version ? "latest" : "v".concat(e.version)) + "/" + e.method + "/" + n + i + "." + e.method } try { if (window.FontAwesomeKitConfig) { var i = window.FontAwesomeKitConfig; "js" === i.method && (t = { async: (e = i).asyncLoading.enabled, autoA11y: e.autoA11y.enabled }, "pro" === e.license && (t.autoFetchSvg = !0, t.fetchSvgFrom = e.baseUrl + "/releases/" + ("latest" === e.version ? "latest" : "v".concat(e.version)) + "/svgs"), e.v4shim.enabled && n(h(e, { shim: !0, minify: e.minify.enabled })), n(h(e, { minify: e.minify.enabled }), t)), "css" === i.method && function (e) { var t, n, i, o, a, s, r, l, c = f.bind(f, ["fa", "fab", "fas", "far", "fal"]); e.autoA11y.enabled && (n = c, o = [], a = document, s = a.documentElement.doScroll, r = "DOMContentLoaded", (l = (s ? /^loaded|^c/ : /^loaded|^i|^c/).test(a.readyState)) || a.addEventListener(r, i = function () { for (a.removeEventListener(r, i), l = 1; i = o.shift();)i() }), l ? setTimeout(n, 0) : o.push(n), t = c, "undefined" != typeof MutationObserver && new MutationObserver(t).observe(document, { childList: !0, subtree: !0 })), e.v4shim.enabled && (e.asyncLoading.enabled ? m(h(e, { shim: !0, minify: e.minify.enabled })) : u(h(e, { shim: !0, minify: e.minify.enabled }))); var d = h(e, { minify: e.minify.enabled }); e.asyncLoading.enabled ? m(d) : u(d) }(i) } } catch (e) { } }();
     </script>
+
     <!-- CSS样式表 -->
     <style>
         * {
@@ -576,6 +577,20 @@
 
         }
 
+        @keyframes scrollDown {
+            0% {
+                margin-top: 7px;
+            }
+
+            50% {
+                margin-top: -7px;
+            }
+
+            100% {
+                margin-top: 7px;
+            }
+        }
+
         a {
             text-decoration: none;
             color: rgba(51, 255, 255, 0.8);
@@ -604,6 +619,32 @@
             user-select: none;
         }
 
+        #scroll-down {
+            width: 160px;
+            height: 50px;
+            margin: 30px auto;
+            border: rgba(255, 255, 255, 0.5) 2px solid;
+            background: rgba(255, 255, 255, 0.1);
+            transition: 0.3s;
+        }
+
+        #scroll-down:hover {
+            border: rgba(255, 255, 255, 0.7) 3px solid;
+            background: rgba(255, 255, 255, 0.3);
+        }
+
+        #scroll-down:active {
+            border: rgba(255, 255, 255, 0.9) 4px solid;
+            background: rgba(255, 255, 255, 0.5);
+        }
+
+        #scroll-down i {
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 30px;
+            line-height: 50px;
+            animation: scrollDown 1s infinite;
+        }
+
         .p_title_1_a {
             color: rgb(250, 250, 250);
             font-size: 1.6em;
@@ -618,7 +659,7 @@
             align-items: center;
             justify-content: center;
             width: 100%;
-            height: 200px;
+            height: 100vh;
             background-image: url(./img/bg.webp);
             background-size: cover;
             box-shadow: rgba(51, 51, 51, 0.3) 0 5px 20px 5px;
@@ -630,7 +671,6 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            width: 100%;
             height: auto;
         }
 
@@ -815,6 +855,10 @@
             display: flex;
         }
 
+        #btnTop {
+            display: none;
+        }
+
         .topa {
             width: 40px;
             height: 40px;
@@ -959,6 +1003,131 @@
             display: flex;
         }
 
+        /* Aplayer日间模式调整 */
+        /* 背景色 */
+        .aplayer {
+            background: rgba(255, 255, 255, 0.60) !important;
+            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.07), 0 1px 5px 0 rgba(0, 0, 0, .1);
+            position: relative;
+        }
+
+        .aplayer.aplayer-fixed .aplayer-lrc:after,
+        .aplayer.aplayer-fixed .aplayer-lrc:before {
+            display: none;
+        }
+
+        .aplayer.aplayer.aplayer-fixed .aplayer-body {
+            background: rgba(255, 255, 255, 0.60) !important;
+            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .07), 0 1px 5px 0 rgba(0, 0, 0, .1);
+            position: fixed;
+        }
+
+        /* 滚动条 */
+        .aplayer .aplayer-list ol::-webkit-scrollbar {
+            width: 5px;
+        }
+
+        .aplayer .aplayer-list ol::-webkit-scrollbar-thumb {
+            border-radius: 3px;
+            background-color: var(--theme-color) !important;
+        }
+
+        .aplayer .aplayer-list ol::-webkit-scrollbar-thumb:hover {
+            background-color: var(--theme-color) !important;
+        }
+
+        /* 圆角 */
+        .aplayer.aplayer-fixed .aplayer-list {
+            border-radius: 6px 6px 0 0 !important;
+        }
+
+        .aplayer.aplayer-fixed .aplayer-miniswitcher {
+            border-radius: 0 6px 6px 0 !important;
+        }
+
+        .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
+            transition: 0.28s !important;
+            border-radius: 6px !important;
+        }
+
+        /* 选中与播放中歌曲激活颜色 */
+        .aplayer .aplayer-list ol li:hover {
+            background: var(--theme-color) !important;
+        }
+
+        .aplayer .aplayer-list ol li.aplayer-list-light {
+            background: var(--theme-color) !important;
+        }
+
+        /* 歌词 */
+        .aplayer-lrc p {
+            color: #ffffff !important;
+            text-shadow: #000000 1px 0 0, #000000 0 1px 0, #000000 -1px 0 0, #000000 0 -1px 0 !important;
+        }
+
+        /* Aplayer黑暗模式 */
+        [data-theme=dark] .aplayer {
+            background: rgba(22, 22, 22, 0.60) !important;
+            color: rgb(255, 255, 255);
+            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .07), 0 1px 5px 0 rgba(0, 0, 0, .1);
+        }
+
+        [data-theme=dark] .aplayer.aplayer-fixed .aplayer-body {
+            background: rgba(22, 22, 22, 0.60) !important;
+            color: rgb(255, 255, 255);
+            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .07), 0 1px 5px 0 rgba(0, 0, 0, .1);
+        }
+
+        [data-theme=dark] .aplayer .aplayer-info .aplayer-controller .aplayer-time .aplayer-icon path {
+            fill: #d4d4d4;
+        }
+
+        [data-theme=dark] .aplayer .aplayer-list ol li:hover {
+            background: var(--theme-color) !important;
+        }
+
+        [data-theme=dark] .aplayer .aplayer-list ol li.aplayer-list-light {
+            background: var(--theme-color) !important;
+        }
+
+        [data-theme=dark] .aplayer .aplayer-info .aplayer-controller .aplayer-time {
+            color: #d4d4d4;
+        }
+
+        [data-theme=dark] .aplayer .aplayer-list ol li .aplayer-list-index {
+            color: #d4d4d4;
+        }
+
+        [data-theme=dark] .aplayer .aplayer-list ol li .aplayer-list-author {
+            color: #d4d4d4;
+        }
+
+        #aplayer {
+            display: none;
+        }
+
+        #navTop {
+            position: fixed;
+            width: 100%;
+            height: 60px;
+            display: none;
+            background: rgba(255, 255, 255, .75);
+        }
+
+        #navTop span {
+            float: left;
+            line-height: 60px;
+            color: #000000;
+            font-weight: 300;
+            font-size: 2.4em;
+            margin: 0 32px;
+        }
+
+        #navTop span:hover {
+            color: #37daff;
+            cursor: pointer;
+        }
+
         /* Aplayer音乐标签伸缩 */
         /* Width的值可根据喜好调整（屏幕的宽度） */
         @media (max-width: 960px) {
@@ -991,7 +1160,6 @@
             }
 
             .box_title_1 {
-                height: 160px;
                 margin: 0 0 5px 0;
             }
 
@@ -1080,20 +1248,29 @@
                 width: 100%;
                 height: 25px;
             }
+
+            #navTop span {
+                margin: 0;
+                width: 100%;
+                font-weight: 300;
+                font-size: 2.4em;
+                text-align: center;
+            }
         }
     </style>
 </head>
 
 <body>
-
+    <nav id="navTop"><span id="navTopTitle" onclick="topScroll()">原神群推荐</span></nav>
     <!-- 头部 -->
     <div class="box_title_1">
-        <h1 class="h1_title_1">欢迎来到原神群推荐！</h1>
-        <p class="p_title_1_a">挑选到心仪的群聊后就可以触摸头像或者复制群号进入了！</p>
+        <h1 class="h1_title_1">原神群推荐</h1>
+        <p class="p_title_1_a">寻到组织后即可触摸头像或复制群号进入了！</p>
+        <div id="scroll-down"><i class="fas fa-angle-double-down"></i></div>
     </div>
 
     <!-- 官方QQ玩家交流群推荐 -->
-    <div class="box_title_2">
+    <div class="box_title_2" id="boxTitle01One">
         <div class="box_title_2_a">
             <h1 class="h1_title_2">官方QQ玩家交流群</h1>
             <p class="p_title_2">一些原神官方的交流群</p>
@@ -2086,7 +2263,8 @@
         audio.volume = 0.2;
     </script>
     <!-- 置顶按钮 -->
-    <div class="topa" onclick="window.location.href='#'"><i style='font-size:24px' class='fas'>&#xf102;</i></div>
+    <div class="topa" id="btnTop"><i style='font-size:24px' class='fas'>&#xf102;</i>
+    </div>
 
     <!-- 插入Aplayer播放器 -->
     <div id='aplayer'></div>
@@ -2095,181 +2273,230 @@
     <script src="//npm.elemecdn.com/aplayer/dist/APlayer.min.js" type="text/javascript"></script>
 
     <script>
-        // Aplayer默认关闭歌词
-        function removelrc() {
-            //检测是否存在歌词按钮
-            if (!document.querySelector(".aplayer-icon-lrc"))
-                return;
-            else {
-                //触发以后立刻移除监听
-                document.removeEventListener("DOMNodeInserted", removelrc);
-                //稍作延时保证触发函数时存在按钮
-                setTimeout(function () {
-                    //以触发按钮的方式隐藏歌词，防止在点击显示歌词按钮时需要点击两次才能出现的问题
-                    document.querySelector(".aplayer-icon-lrc").click();
+        window.onload = function () {
+            // Aplayer默认关闭歌词
+            function removelrc() {
+                // 检测是否存在歌词按钮
+                const lrcIcon = document.querySelector(".aplayer-icon-lrc");
+                if (!lrcIcon) {
+                    return;
+                }
+
+                // 触发以后立刻移除监听
+                observer.disconnect();
+
+                // 稍作延时保证触发函数时存在按钮
+                setTimeout(() => {
+                    // 以触发按钮的方式隐藏歌词，防止在点击显示歌词按钮时需要点击两次才能出现的问题
+                    lrcIcon.click();
                 }, 1);
+
                 console.log("success");
-                return;
+            }
+
+            const observer = new MutationObserver((mutationsList, observer) => {
+                for (let mutation of mutationsList) {
+                    if (mutation.type === "childList") {
+                        removelrc();
+                    }
+                }
+            });
+
+            const observerConfig = {
+                childList: true, // 观察子节点的变化
+                subtree: true, // 观察所有后代节点的变化
+            };
+
+            observer.observe(document, observerConfig); // 开始观察document节点的变化
+
+            // Aplayer配置
+            const ap = new APlayer({
+                container: document.getElementById('aplayer'),
+                fixed: true,
+                autoplay: true,
+                theme: '#0eb83a',
+                loop: 'all',
+                order: 'list',
+                preload: 'metadata',
+                volume: 0.2,
+                lrcType: 3,
+                listFolded: false,
+                listMaxHeight: '36vh',
+                audio: [
+                    {
+                        name: '让风告诉你',
+                        artist: '花玲&喵☆酱&宴宁&kinsen',
+                        url: './audio/让风告诉你 - 花玲喵☆酱宴宁kinsen.mp3',
+                        cover: './img/pic/让风告诉你 - 花玲喵☆酱宴宁kinsen.webp',
+                        lrc: './lrc/让风告诉你 - 花玲喵☆酱宴宁kinsen.lrc',
+                    },
+                    {
+                        name: '门的另一端',
+                        artist: '多多poi&宴宁',
+                        url: './audio/门的另一端 - 多多poi宴宁.mp3',
+                        cover: './img/pic/门的另一端 - 多多poi宴宁.webp',
+                        lrc: './lrc/门的另一端 - 多多poi宴宁.lrc',
+                    },
+                    {
+                        name: '璃云月海',
+                        artist: '宴宁鹿喑&kana&XY大甘蔗&杜冥鸦',
+                        url: './audio/璃云月海 - 宴宁鹿喑kanaXY大甘蔗杜冥鸦.mp3',
+                        cover: './img/pic/璃云月海 - 宴宁鹿喑kanaXY大甘蔗杜冥鸦.webp',
+                        lrc: './lrc/璃云月海 - 宴宁鹿喑kanaXY大甘蔗杜冥鸦.lrc',
+                    },
+                    {
+                        name: '騎士王の誇り',
+                        artist: '川井憲次',
+                        url: './audio/騎士王の誇り - 川井憲次.mp3',
+                        cover: './img/pic/騎士王の誇り - 川井憲次.webp',
+                        lrc: './lrc/騎士王の誇り - 川井憲次.lrc',
+                    },
+                    {
+                        name: 'Ref：rain',
+                        artist: 'Aimer',
+                        url: './audio/Ref：rain - Aimer.mp3',
+                        cover: './img/pic/Ref：rain - Aimer.webp',
+                        lrc: './lrc/Ref：rain - Aimer.lrc',
+                    },
+                    {
+                        name: 'カワキヲアメク',
+                        artist: '美波',
+                        url: './audio/カワキヲアメク - 美波.mp3',
+                        cover: './img/pic/カワキヲアメク - 美波.webp',
+                        lrc: './lrc/カワキヲアメク - 美波.lrc',
+                    },
+                    {
+                        name: 'God knows...',
+                        artist: '平野綾',
+                        url: './audio/God knows... - 平野綾.mp3',
+                        cover: './img/pic/God knows... - 平野綾.webp',
+                        lrc: './lrc/God knows... - 平野綾.lrc',
+                    },
+                    {
+                        name: '光るなら',
+                        artist: 'Goose house',
+                        url: './audio/光るなら - Goose house.mp3',
+                        cover: './img/pic/光るなら - Goose house.webp',
+                        lrc: './lrc/光るなら - Goose house.lrc',
+                    },
+                    {
+                        name: 'Rain',
+                        artist: '秦基博',
+                        url: './audio/Rain - 秦基博.mp3',
+                        cover: './img/pic/Rain - 秦基博.webp',
+                        lrc: './lrc/Rain - 秦基博.lrc',
+                    },
+                    {
+                        name: 'oath sign',
+                        artist: 'LiSA',
+                        url: './audio/oath sign - LiSA.mp3',
+                        cover: './img/pic/oath sign - LiSA.webp',
+                        lrc: './lrc/oath sign - LiSA.lrc',
+                    },
+                    {
+                        name: 'Prologue',
+                        artist: '美波',
+                        url: './audio/Prologue - 美波.mp3',
+                        cover: './img/pic/Prologue - 美波.webp',
+                        lrc: './lrc/Prologue - 美波.lrc',
+                    },
+                    {
+                        name: 'ふわふわ時間',
+                        artist: '桜高軽音部',
+                        url: './audio/ふわふわ時間 - 桜高軽音部.mp3',
+                        cover: './img/pic/ふわふわ時間 - 桜高軽音部.webp',
+                        lrc: './lrc/ふわふわ時間 - 桜高軽音部.lrc',
+                    },
+                    {
+                        name: '比翼の羽根',
+                        artist: 'eufonius',
+                        url: './audio/比翼の羽根 - eufonius.mp3',
+                        cover: './img/pic/比翼の羽根 - eufonius.webp',
+                        lrc: './lrc/比翼の羽根 - eufonius.lrc',
+                    },
+                    {
+                        name: '病名恋ワズライ',
+                        artist: 'HoneyWorks',
+                        url: './audio/病名恋ワズライ - HoneyWorks.mp3',
+                        cover: './img/pic/病名恋ワズライ - HoneyWorks.webp',
+                        lrc: './lrc/病名恋ワズライ - HoneyWorks.lrc',
+                    },
+                    {
+                        name: '渡月橋 ～君 想ふ～',
+                        artist: '仓木麻衣',
+                        url: './audio/渡月橋 ～君 想ふ～ - 仓木麻衣.mp3',
+                        cover: './img/pic/渡月橋 ～君 想ふ～ - 仓木麻衣.webp',
+                        lrc: './lrc/渡月橋 ～君 想ふ～ - 仓木麻衣.lrc',
+                    },
+                    {
+                        name: '告白の夜',
+                        artist: 'Ayasa绚沙',
+                        url: './audio/告白の夜 - Ayasa绚沙.mp3',
+                        cover: './img/pic/告白の夜 - Ayasa绚沙.webp',
+                        lrc: './lrc/告白の夜 - Ayasa绚沙.lrc',
+                    },
+                    {
+                        name: '恋のうた',
+                        artist: 'Yunomi&鬼頭明里',
+                        url: './audio/恋のうた - Yunomiu0026鬼頭明里.mp3',
+                        cover: './img/pic/恋のうた - Yunomiu0026鬼頭明里.webp',
+                        lrc: './lrc/恋のうた - Yunomiu0026鬼頭明里.lrc',
+                    },
+                    {
+                        name: '鳥の詩',
+                        artist: 'Lia',
+                        url: './audio/鳥の詩 - Lia.mp3',
+                        cover: './img/pic/鳥の詩 - Lia.webp',
+                        lrc: './lrc/鳥の詩 - Lia.lrc',
+                    },
+                    {
+                        name: '群青',
+                        artist: 'YOASOBI',
+                        url: './audio/群青 - YOASOBI.mp3',
+                        cover: './img/pic/群青 - YOASOBI.webp',
+                        lrc: './lrc/群青 - YOASOBI.lrc',
+                    },
+                    {
+                        name: '心做し',
+                        artist: 'majiko',
+                        url: './audio/心做し - majiko.mp3',
+                        cover: './img/pic/心做し - majiko.webp',
+                        lrc: './lrc/心做し - majiko.lrc',
+                    },
+                ]
+            });
+        }
+
+    </script>
+
+    <script>
+        function topScroll() {
+            document.documentElement.scrollTop = 0;
+        }
+        var btnTop = document.getElementById("btnTop");
+        var scrollDown = document.getElementById("scroll-down");
+        var dumOnscroll = document.getElementById("dumOnscroll");
+        var aplayer = document.getElementById("aplayer");
+        var navTop = document.getElementById("navTop");
+        var navTopTitle = document.getElementById("navTopTitle");
+        window.onscroll = function () {
+            var scroll = document.documentElement.scrollTop;
+            if (scroll > 300) {
+                btnTop.style.cssText = "display: block;";
+                aplayer.style.cssText = "display: block;";
+                navTop.style.cssText = "display: block;";
+            } else if (scroll < 300) {
+                btnTop.style.cssText = "display: none;";
+                aplayer.style.cssText = "display: none;";
+                navTop.style.cssText = "display: none;";
             }
         }
-        document.addEventListener('DOMNodeInserted', removelrc)
-
-        // Aplayer配置
-        const ap = new APlayer({
-            container: document.getElementById('aplayer'),
-            fixed: true,
-            autoplay: true,
-            theme: '#0eb83a',
-            loop: 'all',
-            order: 'list',
-            preload: 'metadata',
-            volume: 0.2,
-            lrcType: 3,
-            listFolded: false,
-            listMaxHeight: '36vh',
-            audio: [
-                {
-                    name: '让风告诉你',
-                    artist: '花玲&喵☆酱&宴宁&kinsen',
-                    url: './audio/让风告诉你 - 花玲喵☆酱宴宁kinsen.mp3',
-                    cover: './img/pic/让风告诉你 - 花玲喵☆酱宴宁kinsen.webp',
-                    lrc: './lrc/让风告诉你 - 花玲喵☆酱宴宁kinsen.lrc',
-                },
-                {
-                    name: '门的另一端',
-                    artist: '多多poi&宴宁',
-                    url: './audio/门的另一端 - 多多poi宴宁.mp3',
-                    cover: './img/pic/门的另一端 - 多多poi宴宁.webp',
-                    lrc: './lrc/门的另一端 - 多多poi宴宁.lrc',
-                },
-                {
-                    name: '璃云月海',
-                    artist: '宴宁鹿喑&kana&XY大甘蔗&杜冥鸦',
-                    url: './audio/璃云月海 - 宴宁鹿喑kanaXY大甘蔗杜冥鸦.mp3',
-                    cover: './img/pic/璃云月海 - 宴宁鹿喑kanaXY大甘蔗杜冥鸦.webp',
-                    lrc: './lrc/璃云月海 - 宴宁鹿喑kanaXY大甘蔗杜冥鸦.lrc',
-                },
-                {
-                    name: '騎士王の誇り',
-                    artist: '川井憲次',
-                    url: './audio/騎士王の誇り - 川井憲次.mp3',
-                    cover: './img/pic/騎士王の誇り - 川井憲次.webp',
-                    lrc: './lrc/騎士王の誇り - 川井憲次.lrc',
-                },
-                {
-                    name: 'Ref：rain',
-                    artist: 'Aimer',
-                    url: './audio/Ref：rain - Aimer.mp3',
-                    cover: './img/pic/Ref：rain - Aimer.webp',
-                    lrc: './lrc/Ref：rain - Aimer.lrc',
-                },
-                {
-                    name: 'カワキヲアメク',
-                    artist: '美波',
-                    url: './audio/カワキヲアメク - 美波.mp3',
-                    cover: './img/pic/カワキヲアメク - 美波.webp',
-                    lrc: './lrc/カワキヲアメク - 美波.lrc',
-                },
-                {
-                    name: 'God knows...',
-                    artist: '平野綾',
-                    url: './audio/God knows... - 平野綾.mp3',
-                    cover: './img/pic/God knows... - 平野綾.webp',
-                    lrc: './lrc/God knows... - 平野綾.lrc',
-                },
-                {
-                    name: '光るなら',
-                    artist: 'Goose house',
-                    url: './audio/光るなら - Goose house.mp3',
-                    cover: './img/pic/光るなら - Goose house.webp',
-                    lrc: './lrc/光るなら - Goose house.lrc',
-                },
-                {
-                    name: 'Rain',
-                    artist: '秦基博',
-                    url: './audio/Rain - 秦基博.mp3',
-                    cover: './img/pic/Rain - 秦基博.webp',
-                    lrc: './lrc/Rain - 秦基博.lrc',
-                },
-                {
-                    name: 'oath sign',
-                    artist: 'LiSA',
-                    url: './audio/oath sign - LiSA.mp3',
-                    cover: './img/pic/oath sign - LiSA.webp',
-                    lrc: './lrc/oath sign - LiSA.lrc',
-                },
-                {
-                    name: 'Prologue',
-                    artist: '美波',
-                    url: './audio/Prologue - 美波.mp3',
-                    cover: './img/pic/Prologue - 美波.webp',
-                    lrc: './lrc/Prologue - 美波.lrc',
-                },
-                {
-                    name: 'ふわふわ時間',
-                    artist: '桜高軽音部',
-                    url: './audio/ふわふわ時間 - 桜高軽音部.mp3',
-                    cover: './img/pic/ふわふわ時間 - 桜高軽音部.webp',
-                    lrc: './lrc/ふわふわ時間 - 桜高軽音部.lrc',
-                },
-                {
-                    name: '比翼の羽根',
-                    artist: 'eufonius',
-                    url: './audio/比翼の羽根 - eufonius.mp3',
-                    cover: './img/pic/比翼の羽根 - eufonius.webp',
-                    lrc: './lrc/比翼の羽根 - eufonius.lrc',
-                },
-                {
-                    name: '病名恋ワズライ',
-                    artist: 'HoneyWorks',
-                    url: './audio/病名恋ワズライ - HoneyWorks.mp3',
-                    cover: './img/pic/病名恋ワズライ - HoneyWorks.webp',
-                    lrc: './lrc/病名恋ワズライ - HoneyWorks.lrc',
-                },
-                {
-                    name: '渡月橋 ～君 想ふ～',
-                    artist: '仓木麻衣',
-                    url: './audio/渡月橋 ～君 想ふ～ - 仓木麻衣.mp3',
-                    cover: './img/pic/渡月橋 ～君 想ふ～ - 仓木麻衣.webp',
-                    lrc: './lrc/渡月橋 ～君 想ふ～ - 仓木麻衣.lrc',
-                },
-                {
-                    name: '告白の夜',
-                    artist: 'Ayasa绚沙',
-                    url: './audio/告白の夜 - Ayasa绚沙.mp3',
-                    cover: './img/pic/告白の夜 - Ayasa绚沙.webp',
-                    lrc: './lrc/告白の夜 - Ayasa绚沙.lrc',
-                },
-                {
-                    name: '恋のうた',
-                    artist: 'Yunomi&鬼頭明里',
-                    url: './audio/恋のうた - Yunomiu0026鬼頭明里.mp3',
-                    cover: './img/pic/恋のうた - Yunomiu0026鬼頭明里.webp',
-                    lrc: './lrc/恋のうた - Yunomiu0026鬼頭明里.lrc',
-                },
-                {
-                    name: '鳥の詩',
-                    artist: 'Lia',
-                    url: './audio/鳥の詩 - Lia.mp3',
-                    cover: './img/pic/鳥の詩 - Lia.webp',
-                    lrc: './lrc/鳥の詩 - Lia.lrc',
-                },
-                {
-                    name: '群青',
-                    artist: 'YOASOBI',
-                    url: './audio/群青 - YOASOBI.mp3',
-                    cover: './img/pic/群青 - YOASOBI.webp',
-                    lrc: './lrc/群青 - YOASOBI.lrc',
-                },
-                {
-                    name: '心做し',
-                    artist: 'majiko',
-                    url: './audio/心做し - majiko.mp3',
-                    cover: './img/pic/心做し - majiko.webp',
-                    lrc: './lrc/心做し - majiko.lrc',
-                },
-            ]
-        });
+        scrollDown.onclick = function () {
+            var dumOnscroll = document.getElementById("boxTitle01One");
+            document.documentElement.scrollTop = dumOnscroll.offsetTop;
+            console.log(dumOnscroll.offsetTop);
+        }
+        btnTop.onclick = topScroll();
     </script>
 
     <!-- 引入不算子计数JS -->
