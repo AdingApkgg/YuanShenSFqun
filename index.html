@@ -1261,7 +1261,7 @@
 </head>
 
 <body>
-    <nav id="navTop"><span id="navTopTitle" onclick="topScroll()">原神群推荐</span></nav>
+    <nav id="navTop"><span onclick="topScroll()">原神群推荐</span></nav>
     <!-- 头部 -->
     <div class="box_title_1">
         <h1 class="h1_title_1">原神群推荐</h1>
@@ -2290,8 +2290,6 @@
                     // 以触发按钮的方式隐藏歌词，防止在点击显示歌词按钮时需要点击两次才能出现的问题
                     lrcIcon.click();
                 }, 1);
-
-                console.log("success");
             }
 
             const observer = new MutationObserver((mutationsList, observer) => {
@@ -2478,7 +2476,6 @@
         var dumOnscroll = document.getElementById("dumOnscroll");
         var aplayer = document.getElementById("aplayer");
         var navTop = document.getElementById("navTop");
-        var navTopTitle = document.getElementById("navTopTitle");
         window.onscroll = function () {
             var scroll = document.documentElement.scrollTop;
             if (scroll > 300) {
@@ -2496,7 +2493,7 @@
             document.documentElement.scrollTop = dumOnscroll.offsetTop;
             console.log(dumOnscroll.offsetTop);
         }
-        btnTop.onclick = topScroll();
+        btnTop.addEventListener("click", topScroll);
     </script>
 
     <!-- 引入不算子计数JS -->
