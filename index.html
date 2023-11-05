@@ -950,7 +950,6 @@
         }
 
         .reward_ul img {
-
             width: 240px;
             height: 280px;
         }
@@ -997,10 +996,6 @@
             display: flex;
             align-items: center;
             justify-content: center;
-        }
-
-        .reward:hover .reward_ul {
-            display: flex;
         }
 
         /* Aplayer日间模式调整 */
@@ -1142,6 +1137,44 @@
             border-radius: 6px;
             padding: 15px;
             box-shadow: rgba(51, 51, 51, 0.3) 0 0 20px 5px;
+        }
+
+        #exitIconReward {
+            position: absolute;
+            display: flex;
+            margin: 5px;
+            top: 0;
+            right: 0;
+            bottom: 1;
+            left: 1;
+            background: rgba(255, 205, 255, 0.9);
+            border: rgba(51, 51, 51, 0.2) 2px solid;
+            box-shadow: rgba(0, 0, 0, .1) 0 0 5px 2px;
+            width: 26px;
+            height: 26px;
+            border-radius: 99px;
+            line-height: 26px;
+            transform: rotate(0deg);
+            transition: 1s;
+        }
+
+        #exitIconReward:hover {
+            transform: rotate(360deg);
+            background: rgba(255, 205, 255, 0.7);
+            border-radius: 10px;
+        }
+
+        #exitIconReward:active {
+            transform: rotate(-360deg);
+            background: rgba(255, 205, 255, 0.5);
+            border-radius: 4px;
+        }
+
+        #exitIconReward i {
+            color: #ffffff;
+            margin: 0 auto;
+            font-size: 18px;
+            line-height: 26px;
         }
 
         /* Aplayer音乐标签伸缩 */
@@ -2217,7 +2250,7 @@
         </script>
     <div class="box_bottom_1">
         <div class="bottom_icon">
-            <a href="//space.bilibili.com/1198037522/">
+            <a href="//space.bilibili.com/1198037522/" title="作者B站主页">
                 <svg t="1672995899403" class="icon" viewBox="0 0 1129 1024" version="1.1" xmlns="//www.w3.org/2000/svg"
                     p-id="1917" width="200" height="200">
                     <path
@@ -2228,7 +2261,7 @@
                         fill="#20B0E3" p-id="1919"></path>
                 </svg>
             </a>
-            <a href="mailto:adingapkgg@outlook.com">
+            <a href="mailto:adingapkgg@outlook.com" title="作者邮箱">
                 <svg t="1672997720223" class="icon" viewBox="0 0 1472 1024" version="1.1" xmlns="//www.w3.org/2000/svg"
                     p-id="22402" width="200" height="200">
                     <path
@@ -2236,7 +2269,7 @@
                         fill="#000000" p-id="22403"></path>
                 </svg>
             </a>
-            <a href="//github.com/AdingApkgg/">
+            <a href="//github.com/AdingApkgg/" title="作者GitHub主页">
                 <svg t="1672996936918" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="//www.w3.org/2000/svg"
                     p-id="4005" width="200" height="200">
                     <path
@@ -2244,7 +2277,7 @@
                         p-id="4006"></path>
                 </svg>
             </a>
-            <a href="//wpa.qq.com/msgrd?v=3&uin=1679456234&site=qq&menu=yes&jumpflag=1">
+            <a href="//wpa.qq.com/msgrd?v=3&uin=1679456234&site=qq&menu=yes&jumpflag=1" title="作者QQ">
                 <svg t="1672996517173" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="//www.w3.org/2000/svg"
                     p-id="2844" width="200" height="200">
                     <path
@@ -2253,19 +2286,22 @@
                 </svg>
             </a>
             <span class="reward">
-                <svg t="1673038797488" class="icon" id="reward_svg" viewBox="0 0 1024 1024" version="1.1"
-                    xmlns="//www.w3.org/2000/svg" p-id="22824" width="200" height="200">
-                    <path
-                        d="M65.36 597.21c12-6 27.93-7.23 43.23-4.45C178 605.38 211 672.64 268.46 706c57.28 33.31 143.3 15.13 207.34 14l102.71-76.3-157.91-43.11c-18.78-2.07-32.9-18-32.83-36 0.06-16.74 12.28-31.67 29.35-35.22h325.74a1182.74 1182.74 0 0 0 61.63 76.3A1193.41 1193.41 0 0 0 977.63 767L801.55 954.86 681.23 852.15l-405 2.93c-11.9 0.09-47.63-43.3-57.26-52.05l-65.44-59.49q-30.67-27.89-61.35-55.77C77.47 674.33 52.69 660.44 47.74 640c-5.27-21.76 3.26-35.65 17.62-42.79zM517.32 368.57c0-58.33-45.53-136.32-105.13-172.4H281.88c-59.59 36.09-105.13 114.08-105.13 172.4a122.34 122.34 0 0 0 17.15 62.12c-3.14 3.64-4.81 7.45-4.81 11.38 0 12.48 16.84 23.8 44.22 32.12 30.15 22.57 70 36.3 113.73 36.3s83.58-13.73 113.73-36.3c27.38-8.32 44.22-19.65 44.22-32.12 0-3.93-1.67-7.74-4.81-11.38a122.34 122.34 0 0 0 17.14-62.12z m-98.81-49.39V337H387l-7.17 14.05h38.68v17.81h-48.14v59.57h-46.53v-59.56h-48.55v-17.82h39.09L306.67 337h-31.38v-17.81h21.64l-21.64-41h51.26l20.29 55.12 21.37-55.12h50.58l-21.77 41zM292.33 182.66c0 5 4.32 9 9.64 9h90.13c5.33 0 9.64-4 9.64-9s-4.32-9-9.64-9H302c-5.36-0.04-9.67 4.01-9.67 9zM379.91 170c5.33 0 9.64-4 9.64-9s-4.32-9-9.64-9h-65.75c-5.33 0-9.64 4-9.64 9s4.32 9 9.64 9zM320.63 146.65h52.09c8.81-4.57 27.83-16 37.59-37.93 2-4.6 11.23-25.23 2.89-32.51-8.62-7.54-24.2 9.47-52.07 6.79-22.49-2.18-24.87-14.49-49.18-14.9-5.19-0.09-28.15-0.48-34.71 12.19-3 5.85-1.45 12.34 0 16.26z"
-                        fill="#ffffff" p-id="22825"></path>
-                </svg>
-                <ul class="reward_ul">
+                <span id="rewardBtn" onclick="rewardUi()" title="打赏作者"><svg t="1673038797488" class="icon"
+                        id="reward_svg" viewBox="0 0 1024 1024" version="1.1" xmlns="//www.w3.org/2000/svg" p-id="22824"
+                        width="200" height="200">
+                        <path
+                            d="M65.36 597.21c12-6 27.93-7.23 43.23-4.45C178 605.38 211 672.64 268.46 706c57.28 33.31 143.3 15.13 207.34 14l102.71-76.3-157.91-43.11c-18.78-2.07-32.9-18-32.83-36 0.06-16.74 12.28-31.67 29.35-35.22h325.74a1182.74 1182.74 0 0 0 61.63 76.3A1193.41 1193.41 0 0 0 977.63 767L801.55 954.86 681.23 852.15l-405 2.93c-11.9 0.09-47.63-43.3-57.26-52.05l-65.44-59.49q-30.67-27.89-61.35-55.77C77.47 674.33 52.69 660.44 47.74 640c-5.27-21.76 3.26-35.65 17.62-42.79zM517.32 368.57c0-58.33-45.53-136.32-105.13-172.4H281.88c-59.59 36.09-105.13 114.08-105.13 172.4a122.34 122.34 0 0 0 17.15 62.12c-3.14 3.64-4.81 7.45-4.81 11.38 0 12.48 16.84 23.8 44.22 32.12 30.15 22.57 70 36.3 113.73 36.3s83.58-13.73 113.73-36.3c27.38-8.32 44.22-19.65 44.22-32.12 0-3.93-1.67-7.74-4.81-11.38a122.34 122.34 0 0 0 17.14-62.12z m-98.81-49.39V337H387l-7.17 14.05h38.68v17.81h-48.14v59.57h-46.53v-59.56h-48.55v-17.82h39.09L306.67 337h-31.38v-17.81h21.64l-21.64-41h51.26l20.29 55.12 21.37-55.12h50.58l-21.77 41zM292.33 182.66c0 5 4.32 9 9.64 9h90.13c5.33 0 9.64-4 9.64-9s-4.32-9-9.64-9H302c-5.36-0.04-9.67 4.01-9.67 9zM379.91 170c5.33 0 9.64-4 9.64-9s-4.32-9-9.64-9h-65.75c-5.33 0-9.64 4-9.64 9s4.32 9 9.64 9zM320.63 146.65h52.09c8.81-4.57 27.83-16 37.59-37.93 2-4.6 11.23-25.23 2.89-32.51-8.62-7.54-24.2 9.47-52.07 6.79-22.49-2.18-24.87-14.49-49.18-14.9-5.19-0.09-28.15-0.48-34.71 12.19-3 5.85-1.45 12.34 0 16.26z"
+                            fill="#ffffff" p-id="22825"></path>
+                    </svg></span>
+
+                <ul id="rewardUl" class="reward_ul">
                     <li>
                         <p>微信收款码</p>
                         <img src="./img/reward/WX.webp" alt="微信支付打赏">
                     </li>
                     <li>
                         <p class="reward_title_top">打赏</p>
+                        <span id="exitIconReward" onclick="rewardUi()"><i class="fas fa-times"></i></span>
                         <p>支付宝收款码</p>
                         <img src="./img/reward/ZFB.webp" alt="支付宝支付打赏">
                         <p class="reward_title_bottom">什么？！ 真的要给我打赏吗？真的吗？！ 谢谢！！！ 感谢支持。</p>
@@ -2492,14 +2528,28 @@
             ]
         });
 
-        function topScroll() {
-            document.documentElement.scrollTop = 0;
-        }
         var btnTop = document.getElementById("btnTop");
         var scrollDown = document.getElementById("scroll-down");
         var dumOnscroll = document.getElementById("dumOnscroll");
         var aplayer = document.getElementById("aplayer");
         var navTop = document.getElementById("navTop");
+        var rewardBtn = document.getElementById("rewardBtn");
+        var rewardUl = document.getElementById("rewardUl");
+        var exitIconReward = document.getElementById("exitIconReward");
+        var tempTF = 0;
+
+        function topScroll() {
+            document.documentElement.scrollTop = 0;
+        }
+        function rewardUi() {
+            if (tempTF == 0) {
+                rewardUl.style.cssText = "display: flex;";
+                tempTF = 1;
+            } else if (tempTF == 1) {
+                rewardUl.style.cssText = "display: none;";
+                tempTF = 0;
+            }
+        }
         window.onscroll = function () {
             var scroll = document.documentElement.scrollTop;
             if (scroll > 300) {
