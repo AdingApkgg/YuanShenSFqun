@@ -947,6 +947,7 @@
             align-items: center;
             justify-content: center;
             list-style-type: none;
+            z-index: 100;
         }
 
         .reward_ul img {
@@ -1177,6 +1178,16 @@
             line-height: 26px;
         }
 
+        #mask {
+            display: none;
+            top: 0px;
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            z-index: 99;
+        }
+
         /* Aplayer音乐标签伸缩 */
         /* Width的值可根据喜好调整（屏幕的宽度） */
         @media (max-width: 960px) {
@@ -1313,6 +1324,20 @@
                 border-radius: 4px;
                 padding: 10px;
                 box-shadow: rgba(51, 51, 51, 0.3) 0 0 10px 3px;
+            }
+
+            #exitIconReward {
+                margin: 3px;
+                border: rgba(51, 51, 51, 0.2) 1px solid;
+                box-shadow: rgba(0, 0, 0, .1) 0 0 3px 1px;
+                width: 20px;
+                height: 20px;
+                line-height: 20px;
+            }
+
+            #exitIconReward i {
+                font-size: 12px;
+                line-height: 20px;
             }
         }
     </style>
@@ -2297,18 +2322,19 @@
                 <ul id="rewardUl" class="reward_ul">
                     <li>
                         <p>微信收款码</p>
-                        <img src="./img/reward/WX.webp" alt="微信支付打赏">
+                        <a href="./img/reward/WX.webp" target="_blank"><img src="./img/reward/WX.webp" alt="微信支付打赏"></a>
                     </li>
                     <li>
                         <p class="reward_title_top">打赏</p>
                         <span id="exitIconReward" onclick="rewardUi()"><i class="fas fa-times"></i></span>
                         <p>支付宝收款码</p>
-                        <img src="./img/reward/ZFB.webp" alt="支付宝支付打赏">
+                        <a href="./img/reward/ZFB.webp" target="_blank"><img src="./img/reward/ZFB.webp"
+                                alt="支付宝支付打赏"></a>
                         <p class="reward_title_bottom">什么？！ 真的要给我打赏吗？真的吗？！ 谢谢！！！ 感谢支持。</p>
                     </li>
                     <li>
                         <p>QQ收款码</p>
-                        <img src="./img/reward/QQ.webp" alt="QQ支付打赏">
+                        <a href="./img/reward/QQ.webp" target="_blank"><img src="./img/reward/QQ.webp" alt="QQ支付打赏"></a>
                     </li>
                 </ul>
             </span>
@@ -2534,7 +2560,6 @@
         var aplayer = document.getElementById("aplayer");
         var navTop = document.getElementById("navTop");
         var rewardBtn = document.getElementById("rewardBtn");
-        var rewardUl = document.getElementById("rewardUl");
         var exitIconReward = document.getElementById("exitIconReward");
         var tempTF = 0;
 
@@ -2542,11 +2567,15 @@
             document.documentElement.scrollTop = 0;
         }
         function rewardUi() {
+            var rewardUl = document.getElementById("rewardUl");
+            var divMask = document.getElementById("mask");
             if (tempTF == 0) {
                 rewardUl.style.cssText = "display: flex;";
+                divMask.style.cssText = "display: block;";
                 tempTF = 1;
             } else if (tempTF == 1) {
                 rewardUl.style.cssText = "display: none;";
+                divMask.style.cssText = "display: none;";
                 tempTF = 0;
             }
         }
@@ -2571,6 +2600,8 @@
 
     <!-- 引入不算子计数JS -->
     <script async src="//npm.elemecdn.com/busuanzi/bsz.pure.mini.js"></script>
+
+    <div id="mask"></div>
 </body>
 
 </html>
