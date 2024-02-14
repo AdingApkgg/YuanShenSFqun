@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我们的回忆2024</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            scroll-behavior: smooth;
+            transition: .3s all ease-in-out;
+        }
+
+        body {
+            background: black;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            height: 5vh;
+            z-index: 10px;
+            background: rgba(255, 255, 255, .9);
+            border-bottom-left-radius: 16px;
+            border-bottom-right-radius: 16px;
+            text-align: center;
+            vertical-align: middle;
+            font-size: 1.6em;
+            font-weight: bold;
+        }
+
+        ul li a img {
+            width: 100%;
+            height: auto;
+
+        }
+
+        button {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            height: 10vh;
+            z-index: 10px;
+            background: rgba(255, 255, 255, .9);
+            border-top-left-radius: 16px;
+            border-top-right-radius: 16px;
+            border: 3px solid rgba(192, 116, 116, 0.7);
+        }
+
+        button:hover {
+            filter: brightness(.7);
+        }
+
+        button:hover svg {
+            transform: rotate(360deg);
+        }
+
+        svg {
+            width: 3rem;
+            margin: 0 10px;
+            vertical-align: middle;
+        }
+
+        span {
+            font-size: 2em;
+            margin: 0 10px;
+            vertical-align: middle;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <header>我们的回忆2024</header>
+    <ul>
+        <li><a href="#"><img src="temp/img/default_figure1_.webp" alt=""></a></li>
+        <li><a href="#"><img src="temp/img/default_figure2_.webp" alt=""></a></li>
+        <li><a href="#"><img src="temp/img/default_figure3_.webp" alt=""></a></li>
+        <li><a href="#"><img src="temp/img/default_figure4_.webp" alt=""></a></li>
+        <li><a href="#"><img src="temp/img/default_figure5_.webp" alt=""></a></li>
+        <li><a href="#"><img src="temp/img/default_figure6_.webp" alt=""></a></li>
+        <li><a href="#"><img src="temp/img/default_figure7_.webp" alt=""></a></li>
+        <li><a href="#"><img src="temp/img/default_figure8_.webp" alt=""></a></li>
+        <li><a href="#"><img src="temp/img/default_figure9_.webp" alt=""></a></li>
+        <li><a href="#"><img src="temp/img/default_figure10_.webp" alt=""></a></li>
+        <li><a href="#"><img src="temp/img/default_figure11_.webp" alt=""></a></li>
+        <li><a href="#"><img src="temp/img/default_figure12_.webp" alt=""></a></li>
+        <li><a href="#"><img src="temp/img/default_figure13_.webp" alt=""></a></li>
+        <li><a href="#"><img src="temp/img/default_figure14_.webp" alt=""></a></li>
+        <li><a href="#"><img src="temp/img/default_figure15_.webp" alt=""></a></li>
+        <li><a href="#"><img src="temp/img/default_figure16_.webp" alt=""></a></li>
+        <li><a href="#"><img src="temp/img/default_figure17_.webp" alt=""></a></li>
+        <li><a href="#"><img src="temp/img/default_figure18_.webp" alt=""></a></li>
+        <li><a href="#"><img src="temp/img/default_figure19_.webp" alt=""></a></li>
+        <li><a href="#"><img src="temp/img/default_figure20_.webp" alt=""></a></li>
+    </ul>
+
+    <button type="button" onclick="buttonToTime()" id="buttonSwitsh"><svg xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+            <path id="buttonSwitshSvg"
+                d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zM188.3 147.1c7.6-4.2 16.8-4.1 24.3 .5l144 88c7.1 4.4 11.5 12.1 11.5 20.5s-4.4 16.1-11.5 20.5l-144 88c-7.4 4.5-16.7 4.7-24.3 .5s-12.3-12.2-12.3-20.9V168c0-8.7 4.7-16.7 12.3-20.9z" />
+        </svg><span id="buttonSwitshTest">暂停</span></button>
+    <script>
+        var scrollToTimeImg = false;
+        var timer;
+        var scrollToY = 0;
+        var buttonSwitsh = document.getElementById("buttonSwitsh");
+        var buttonSwitshTest = document.getElementById("buttonSwitshTest");
+        var buttonSwitshSvg = document.getElementById("buttonSwitshSvg");
+
+        // 按钮样式检查切换
+        function buttonToTime() {
+            if (scrollToTimeImg == false) {
+                scrollToTimeImg = true;
+                buttonSwitshTest.innerText = "播放";
+                buttonSwitshSvg.setAttribute("d", "M48 64C21.5 64 0 85.5 0 112V400c0 26.5 21.5 48 48 48H80c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48H48zm192 0c-26.5 0-48 21.5-48 48V400c0 26.5 21.5 48 48 48h32c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48H240z");
+            } else if (scrollToTimeImg == true) {
+                scrollToTimeImg = false;
+                buttonSwitshTest.innerText = "暂停";
+                buttonSwitshSvg.setAttribute("d", "M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zM188.3 147.1c7.6-4.2 16.8-4.1 24.3 .5l144 88c7.1 4.4 11.5 12.1 11.5 20.5s-4.4 16.1-11.5 20.5l-144 88c-7.4 4.5-16.7 4.7-24.3 .5s-12.3-12.2-12.3-20.9V168c0-8.7 4.7-16.7 12.3-20.9z");
+            }
+            scrollToTimeImgSwitsh(scrollToTimeImg);
+        }
+
+        // 滚动计时器开关
+        function scrollToTimeImgSwitsh(trueOrFalse) {
+            scrollToY = document.documentElement.scrollTop;
+            if (trueOrFalse == true) {
+                clearInterval(timer);
+                timer = setInterval(function () {
+                    window.scrollTo(0, scrollToY)
+                    if (document.documentElement.scrollTop > 11600) {
+                        document.documentElement.scrollTop = 0;
+                    } else {
+                        scrollToY += 10;
+                    }
+                }, 50);
+            } else if (trueOrFalse == false) {
+                clearInterval(timer);
+            }
+        }
+
+        // 监听滚动事件
+        window.onload = function () {
+            window.addEventListener("scroll", function () {
+                if (document.documentElement.scrollTop >= 10700) {
+                    document.documentElement.scrollTop = 0;
+                    buttonToTime();
+                }
+            })
+        }
+
+    </script>
+</body>
+
+</html>
