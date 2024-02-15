@@ -11,50 +11,88 @@
             padding: 0;
             scroll-behavior: smooth;
             transition: .3s all ease-in-out;
+            box-sizing: border-box;
         }
 
         body {
-            background: black;
+            background: linear-gradient(145deg, #ef32d9, #89fffd);
+            background-attachment: fixed;
+            background-size: 300%;
+            animation: bgAnimation 5s infinite;
         }
 
         header {
             position: fixed;
             top: 0;
             width: 100%;
-            height: 5vh;
-            z-index: 10px;
+            height: 8vh;
+            z-index: 10;
             background: rgba(255, 255, 255, .9);
-            border-bottom-left-radius: 16px;
-            border-bottom-right-radius: 16px;
-            text-align: center;
+            border-bottom-left-radius: 6px;
+            border-bottom-right-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: #ef32d9 1px solid;
+            border-bottom: #ef32d9 5px solid;
+        }
+
+        header h1 {
             vertical-align: middle;
-            font-size: 1.6em;
+            font-size: 1.8rem;
             font-weight: bold;
         }
 
-        ul li a img {
-            width: 100%;
-            height: auto;
+        ul {
+            width: 94%;
+            margin: 0 auto;
+            margin-top: 8vh;
+            margin-bottom: 16vh;
+            padding: 5px;
+            list-style: none;
+        }
 
+        ul li {
+            margin: 20px 0;
+            width: 100%;
+            border-radius: 6px;
+            border: rgba(255, 255, 255, .9) solid 10px;
+            box-shadow: rgba(51, 51, 51, .7) 0 2px 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            background: rgba(255, 255, 255, .7);
+        }
+
+        ul li:hover img {
+            transform: scale(1.6);
+            border-radius: 1200px;
+        }
+
+        ul li img {
+            width: 100%;
         }
 
         button {
             position: fixed;
             bottom: 0;
+            left: 0;
             width: 100%;
             height: 10vh;
             z-index: 10px;
             background: rgba(255, 255, 255, .9);
-            border-top-left-radius: 16px;
-            border-top-right-radius: 16px;
-            border: 3px solid rgba(192, 116, 116, 0.7);
+            border-top-left-radius: 6px;
+            border-top-right-radius: 6px;
+            border: none;
+            border: 6px solid rgba(192, 116, 116, 0.5);
         }
 
-        button:hover {
+        button:active {
             filter: brightness(.7);
         }
 
-        button:hover svg {
+        button:active svg {
             transform: rotate(360deg);
         }
 
@@ -70,34 +108,53 @@
             vertical-align: middle;
             font-weight: bold;
         }
+
+        audio {
+            position: fixed;
+            bottom: 11vh;
+            width: 100%;
+            height: 40px;
+        }
+
+        @keyframes bgAnimation {
+
+            0%,
+            100% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+        }
     </style>
 </head>
 
 <body>
-    <header>我们的回忆2024</header>
+    <header>
+        <h1>我们的回忆2024</h1>
+    </header>
     <ul>
-        <li><a href="#"><img src="temp/img/default_figure1_.webp" alt=""></a></li>
-        <li><a href="#"><img src="temp/img/default_figure2_.webp" alt=""></a></li>
-        <li><a href="#"><img src="temp/img/default_figure3_.webp" alt=""></a></li>
-        <li><a href="#"><img src="temp/img/default_figure4_.webp" alt=""></a></li>
-        <li><a href="#"><img src="temp/img/default_figure5_.webp" alt=""></a></li>
-        <li><a href="#"><img src="temp/img/default_figure6_.webp" alt=""></a></li>
-        <li><a href="#"><img src="temp/img/default_figure7_.webp" alt=""></a></li>
-        <li><a href="#"><img src="temp/img/default_figure8_.webp" alt=""></a></li>
-        <li><a href="#"><img src="temp/img/default_figure9_.webp" alt=""></a></li>
-        <li><a href="#"><img src="temp/img/default_figure10_.webp" alt=""></a></li>
-        <li><a href="#"><img src="temp/img/default_figure11_.webp" alt=""></a></li>
-        <li><a href="#"><img src="temp/img/default_figure12_.webp" alt=""></a></li>
-        <li><a href="#"><img src="temp/img/default_figure13_.webp" alt=""></a></li>
-        <li><a href="#"><img src="temp/img/default_figure14_.webp" alt=""></a></li>
-        <li><a href="#"><img src="temp/img/default_figure15_.webp" alt=""></a></li>
-        <li><a href="#"><img src="temp/img/default_figure16_.webp" alt=""></a></li>
-        <li><a href="#"><img src="temp/img/default_figure17_.webp" alt=""></a></li>
-        <li><a href="#"><img src="temp/img/default_figure18_.webp" alt=""></a></li>
-        <li><a href="#"><img src="temp/img/default_figure19_.webp" alt=""></a></li>
-        <li><a href="#"><img src="temp/img/default_figure20_.webp" alt=""></a></li>
+        <li><img src="img/figure1.webp" alt="figure1"></li>
+        <li><img src="img/figure2.webp" alt="figure2"></li>
+        <li><img src="img/figure3.webp" alt="figure3"></li>
+        <li><img src="img/figure4.webp" alt="figure4"></li>
+        <li><img src="img/figure5.webp" alt="figure5"></li>
+        <li><img src="img/figure6.webp" alt="figure6"></li>
+        <li><img src="img/figure7.webp" alt="figure7"></li>
+        <li><img src="img/figure8.webp" alt="figure8"></li>
+        <li><img src="img/figure9.webp" alt="figure9"></li>
+        <li><img src="img/figure10.webp" alt="figure10"></li>
+        <li><img src="img/figure11.webp" alt="figure11"></li>
+        <li><img src="img/figure12.webp" alt="figure12"></li>
+        <li><img src="img/figure13.webp" alt="figure13"></li>
+        <li><img src="img/figure14.webp" alt="figure14"></li>
+        <li><img src="img/figure15.webp" alt="figure15"></li>
+        <li><img src="img/figure16.webp" alt="figure16"></li>
+        <li><img src="img/figure17.webp" alt="figure17"></li>
+        <li><img src="img/figure18.webp" alt="figure18"></li>
     </ul>
-
+    <audio src="audio/music.mp3" controls autoplay loop></audio>
     <button type="button" onclick="buttonToTime()" id="buttonSwitsh"><svg xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
             <path id="buttonSwitshSvg"
@@ -117,25 +174,25 @@
                 scrollToTimeImg = true;
                 buttonSwitshTest.innerText = "播放";
                 buttonSwitshSvg.setAttribute("d", "M48 64C21.5 64 0 85.5 0 112V400c0 26.5 21.5 48 48 48H80c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48H48zm192 0c-26.5 0-48 21.5-48 48V400c0 26.5 21.5 48 48 48h32c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48H240z");
+                buttonSwitshSvg.setAttribute("viewBox", "0 0 320 512");
             } else if (scrollToTimeImg == true) {
                 scrollToTimeImg = false;
                 buttonSwitshTest.innerText = "暂停";
                 buttonSwitshSvg.setAttribute("d", "M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zM188.3 147.1c7.6-4.2 16.8-4.1 24.3 .5l144 88c7.1 4.4 11.5 12.1 11.5 20.5s-4.4 16.1-11.5 20.5l-144 88c-7.4 4.5-16.7 4.7-24.3 .5s-12.3-12.2-12.3-20.9V168c0-8.7 4.7-16.7 12.3-20.9z");
+                buttonSwitshSvg.setAttribute("viewBox", "0 0 512 512");
             }
             scrollToTimeImgSwitsh(scrollToTimeImg);
         }
 
         // 滚动计时器开关
         function scrollToTimeImgSwitsh(trueOrFalse) {
-            scrollToY = document.documentElement.scrollTop;
             if (trueOrFalse == true) {
                 clearInterval(timer);
                 timer = setInterval(function () {
-                    window.scrollTo(0, scrollToY)
                     if (document.documentElement.scrollTop > 11600) {
                         document.documentElement.scrollTop = 0;
                     } else {
-                        scrollToY += 10;
+                        document.documentElement.scrollTop += 20;
                     }
                 }, 50);
             } else if (trueOrFalse == false) {
@@ -144,14 +201,12 @@
         }
 
         // 监听滚动事件
-        window.onload = function () {
-            window.addEventListener("scroll", function () {
-                if (document.documentElement.scrollTop >= 10700) {
-                    document.documentElement.scrollTop = 0;
-                    buttonToTime();
-                }
-            })
-        }
+        window.addEventListener("scroll", function () {
+            if (document.documentElement.scrollTop >= 10700) {
+                buttonToTime();
+                document.documentElement.scrollTop = 0;
+            }
+        })
 
     </script>
 </body>
