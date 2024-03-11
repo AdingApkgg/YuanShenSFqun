@@ -1105,6 +1105,31 @@ p {
     cursor: pointer;
 }
 
+#navList {
+    float: right;
+    position: absolute;
+    right: 5px;
+    height: 100%;
+    width: 300px;
+}
+
+#navList ul {
+    list-style: none;
+    float: right;
+    height: 100%;
+}
+
+#navList ul li {
+    float: left;
+    margin: 0 5px;
+    height: 100%;
+}
+
+#navList ul li a {
+    line-height: 60px;
+    font-weight: bold;
+}
+
 .giscus {
     width: 100%;
     height: auto;

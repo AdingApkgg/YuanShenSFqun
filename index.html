@@ -21,7 +21,13 @@
 </head>
 
 <body>
-    <nav id="navTop"><span onclick="topScroll()">原神群推荐</span></nav>
+    <nav id="navTop"><span onclick="topScroll()">原神群推荐</span><span id="navList">
+            <ul>
+                <li><a href="https://saop.cc/" target="_blank">主页</a></li>
+                <li><a href="#comment">评论</a></li>
+                <li><a href="javascript:rewardUi()">打赏</a></li>
+            </ul>
+        </span></nav>
     <!-- 头部 -->
     <div class="box_title_1">
         <h1 class="h1_title_1">原神群推荐</h1>
@@ -945,6 +951,7 @@
     </div>
 
     <!-- 底部 -->
+    <a id="comment"></a>
     <script src="https://giscus.app/client.js" data-repo="AdingApkgg/giscus" data-repo-id="R_kgDOKBUdzQ"
         data-category="Announcements" data-category-id="DIC_kwDOKBUdzc4CYOU9" data-mapping="url" data-strict="0"
         data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top" data-theme="preferred_color_scheme"
