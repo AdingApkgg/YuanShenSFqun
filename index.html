@@ -9,14 +9,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>原神群推荐</title>
-    <link rel="icon" href="./favicon.ico">
+    <link rel="icon" href="favicon.ico">
     <!-- 引入Aplayer播放器CSS文件 -->
-    <link rel="stylesheet" href="//registry.npmmirror.com/aplayer/latest/files/dist/APlayer.min.css">
+    <link rel="stylesheet" href="https://registry.npmmirror.com/aplayer/latest/files/dist/APlayer.min.css">
     <!-- 引入“置顶按钮”图标 -->
-    <script>
-        window.FontAwesomeKitConfig = { "asyncLoading": { "enabled": true }, "autoA11y": { "enabled": true }, "baseUrl": "https://kit-free.fontawesome.com", "license": "free", "method": "css", "minify": { "enabled": true }, "v4shim": { "enabled": false }, "version": "latest" };
-        !function () { !function () { if (!(void 0 === window.Element || "classList" in document.documentElement)) { var e, t, n, i = Array.prototype, o = i.push, a = i.splice, s = i.join; r.prototype = { add: function (e) { this.contains(e) || (o.call(this, e), this.el.className = this.toString()) }, contains: function (e) { return -1 != this.el.className.indexOf(e) }, item: function (e) { return this[e] || null }, remove: function (e) { if (this.contains(e)) { for (var t = 0; t < this.length && this[t] != e; t++); a.call(this, t, 1), this.el.className = this.toString() } }, toString: function () { return s.call(this, " ") }, toggle: function (e) { return this.contains(e) ? this.remove(e) : this.add(e), this.contains(e) } }, window.DOMTokenList = r, e = Element.prototype, t = "classList", n = function () { return new r(this) }, Object.defineProperty ? Object.defineProperty(e, t, { get: n }) : e.__defineGetter__(t, n) } function r(e) { for (var t = (this.el = e).className.replace(/^\s+|\s+$/g, "").split(/\s+/), n = 0; n < t.length; n++)o.call(this, t[n]) } }(); function f(e) { var t, n, i, o; prefixesArray = e || ["fa"], prefixesSelectorString = "." + Array.prototype.join.call(e, ",."), t = document.querySelectorAll(prefixesSelectorString), Array.prototype.forEach.call(t, function (e) { n = e.getAttribute("title"), e.setAttribute("aria-hidden", "true"), i = !e.nextElementSibling || !e.nextElementSibling.classList.contains("sr-only"), n && i && ((o = document.createElement("span")).innerHTML = n, o.classList.add("sr-only"), e.parentNode.insertBefore(o, e.nextSibling)) }) } var e, t, u = function (e) { var t = document.createElement("link"); t.href = e, t.media = "all", t.rel = "stylesheet", document.getElementsByTagName("head")[0].appendChild(t) }, m = function (e) { !function (e, t, n) { var i, o = window.document, a = o.createElement("link"); if (t) i = t; else { var s = (o.body || o.getElementsByTagName("head")[0]).childNodes; i = s[s.length - 1] } var r = o.styleSheets; a.rel = "stylesheet", a.href = e, a.media = "only x", function e(t) { if (o.body) return t(); setTimeout(function () { e(t) }) }(function () { i.parentNode.insertBefore(a, t ? i : i.nextSibling) }); var l = function (e) { for (var t = a.href, n = r.length; n--;)if (r[n].href === t) return e(); setTimeout(function () { l(e) }) }; function c() { a.addEventListener && a.removeEventListener("load", c), a.media = n || "all" } a.addEventListener && a.addEventListener("load", c), (a.onloadcssdefined = l)(c) }(e) }, n = function (e, t) { var n = t && void 0 !== t.autoFetchSvg ? t.autoFetchSvg : void 0, i = t && void 0 !== t.async ? t.async : void 0, o = t && void 0 !== t.autoA11y ? t.autoA11y : void 0, a = document.createElement("script"), s = document.scripts[0]; a.src = e, void 0 !== o && a.setAttribute("data-auto-a11y", o ? "true" : "false"), n && (a.setAttributeNode(document.createAttribute("data-auto-fetch-svg")), a.setAttribute("data-fetch-svg-from", t.fetchSvgFrom)), i && a.setAttributeNode(document.createAttribute("defer")), s.parentNode.appendChild(a) }; function h(e, t) { var n = t && t.shim ? e.license + "-v4-shims" : e.license, i = t && t.minify ? ".min" : ""; return e.baseUrl + "/releases/" + ("latest" === e.version ? "latest" : "v".concat(e.version)) + "/" + e.method + "/" + n + i + "." + e.method } try { if (window.FontAwesomeKitConfig) { var i = window.FontAwesomeKitConfig; "js" === i.method && (t = { async: (e = i).asyncLoading.enabled, autoA11y: e.autoA11y.enabled }, "pro" === e.license && (t.autoFetchSvg = !0, t.fetchSvgFrom = e.baseUrl + "/releases/" + ("latest" === e.version ? "latest" : "v".concat(e.version)) + "/svgs"), e.v4shim.enabled && n(h(e, { shim: !0, minify: e.minify.enabled })), n(h(e, { minify: e.minify.enabled }), t)), "css" === i.method && function (e) { var t, n, i, o, a, s, r, l, c = f.bind(f, ["fa", "fab", "fas", "far", "fal"]); e.autoA11y.enabled && (n = c, o = [], a = document, s = a.documentElement.doScroll, r = "DOMContentLoaded", (l = (s ? /^loaded|^c/ : /^loaded|^i|^c/).test(a.readyState)) || a.addEventListener(r, i = function () { for (a.removeEventListener(r, i), l = 1; i = o.shift();)i() }), l ? setTimeout(n, 0) : o.push(n), t = c, "undefined" != typeof MutationObserver && new MutationObserver(t).observe(document, { childList: !0, subtree: !0 })), e.v4shim.enabled && (e.asyncLoading.enabled ? m(h(e, { shim: !0, minify: e.minify.enabled })) : u(h(e, { shim: !0, minify: e.minify.enabled }))); var d = h(e, { minify: e.minify.enabled }); e.asyncLoading.enabled ? m(d) : u(d) }(i) } } catch (e) { } }();
-    </script>
+    <link rel="stylesheet"
+        href="https://registry.npmmirror.com/@fortawesome/fontawesome-free/latest/files/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -37,7 +35,7 @@
     <div class="box_title_1">
         <h1 class="h1_title_1">原神群推荐</h1>
         <p class="p_title_1_a">寻到组织后即可触摸头像或复制群号进入了！</p>
-        <div id="scroll-down"><i class="fas fa-angle-double-down"></i></div>
+        <div id="scroll-down"><i class="fa-solid fa-angles-down"></i></div>
     </div>
 
     <!-- 官方QQ玩家交流群推荐 -->
@@ -50,7 +48,7 @@
 
             <ul>
                 <li class="li_1">
-                    <img src="./img/icon/miyoushe.webp" alt="miHoYoBBS">
+                    <img src="img/icon/miyoushe.webp" alt="miHoYoBBS">
                     <p><a href="#">禁止跳转</a></p>
                 </li>
 
@@ -66,7 +64,7 @@
 
             <ul>
                 <li class="li_1">
-                    <img src="./img/icon/paimeng.webp" alt="派蒙">
+                    <img src="img/icon/paimeng.webp" alt="派蒙">
                     <p><a href="#">禁止跳转</a></p>
                 </li>
 
@@ -82,7 +80,7 @@
 
             <ul>
                 <li class="li_1">
-                    <img src="./img/icon/paimeng.webp" alt="派蒙">
+                    <img src="img/icon/paimeng.webp" alt="派蒙">
                     <p><a href="#">禁止跳转</a></p>
                 </li>
 
@@ -98,7 +96,7 @@
 
             <ul>
                 <li class="li_1">
-                    <img src="./img/icon/paimeng.webp" alt="派蒙">
+                    <img src="img/icon/paimeng.webp" alt="派蒙">
                     <p><a href="#">禁止跳转</a></p>
                 </li>
 
@@ -114,7 +112,7 @@
 
             <ul>
                 <li class="li_1">
-                    <img src="./img/icon/paimeng.webp" alt="派蒙">
+                    <img src="img/icon/paimeng.webp" alt="派蒙">
                     <p><a href="#">禁止跳转</a></p>
                 </li>
 
@@ -130,7 +128,7 @@
 
             <ul>
                 <li class="li_1">
-                    <img src="./img/icon/paimeng.webp" alt="派蒙">
+                    <img src="img/icon/paimeng.webp" alt="派蒙">
                     <p><a href="#">禁止跳转</a></p>
                 </li>
 
@@ -139,14 +137,14 @@
                     <p>性质：原神官方玩家交流</p>
                     <p>QQ群号：817157054</p>
                     <p>推荐度：&#10029&#10029&#10029&#10029&#10029</p>
-                    <p>国服官网：<a href="//ys.mihoyo.com">ys.mihoyo.com</a></p>
-                    <p>国际服官网：<a href="//genshin.hoyoverse.com">genshin.hoyoverse.com</a></p>
+                    <p>国服官网：<a href="https://ys.mihoyo.com">ys.mihoyo.com</a></p>
+                    <p>国际服官网：<a href="https://genshin.hoyoverse.com">genshin.hoyoverse.com</a></p>
                 </li>
             </ul>
 
             <ul>
                 <li class="li_1">
-                    <img src="./img/icon/paimeng.webp" alt="派蒙">
+                    <img src="img/icon/paimeng.webp" alt="派蒙">
                     <p><a href="#">禁止跳转</a></p>
                 </li>
 
@@ -155,14 +153,14 @@
                     <p>性质：原神官方玩家交流</p>
                     <p>QQ群号：833020413</p>
                     <p>推荐度：&#10029&#10029&#10029&#10029&#10029</p>
-                    <p>国服官网：<a href="//ys.mihoyo.com">ys.mihoyo.com</a></p>
-                    <p>国际服官网：<a href="//genshin.hoyoverse.com">genshin.hoyoverse.com</a></p>
+                    <p>国服官网：<a href="https://ys.mihoyo.com">ys.mihoyo.com</a></p>
+                    <p>国际服官网：<a href="https://genshin.hoyoverse.com">genshin.hoyoverse.com</a></p>
                 </li>
             </ul>
 
             <ul>
                 <li class="li_1">
-                    <img src="./img/icon/paimeng.webp" alt="派蒙">
+                    <img src="img/icon/paimeng.webp" alt="派蒙">
                     <p><a href="#">禁止跳转</a></p>
                 </li>
 
@@ -171,14 +169,14 @@
                     <p>性质：原神官方玩家交流</p>
                     <p>QQ群号：661753220</p>
                     <p>推荐度：&#10029&#10029&#10029&#10029&#10029</p>
-                    <p>国服官网：<a href="//ys.mihoyo.com">ys.mihoyo.com</a></p>
-                    <p>国际服官网：<a href="//genshin.hoyoverse.com">genshin.hoyoverse.com</a></p>
+                    <p>国服官网：<a href="https://ys.mihoyo.com">ys.mihoyo.com</a></p>
+                    <p>国际服官网：<a href="https://genshin.hoyoverse.com">genshin.hoyoverse.com</a></p>
                 </li>
             </ul>
 
             <ul>
                 <li class="li_1">
-                    <img src="./img/icon/paimeng.webp" alt="派蒙">
+                    <img src="img/icon/paimeng.webp" alt="派蒙">
                     <p><a href="#">禁止跳转</a></p>
                 </li>
 
@@ -187,14 +185,14 @@
                     <p>性质：原神官方玩家交流</p>
                     <p>QQ群号：835347387</p>
                     <p>推荐度：&#10029&#10029&#10029&#10029&#10029</p>
-                    <p>国服官网：<a href="//ys.mihoyo.com">ys.mihoyo.com</a></p>
-                    <p>国际服官网：<a href="//genshin.hoyoverse.com">genshin.hoyoverse.com</a></p>
+                    <p>国服官网：<a href="https://ys.mihoyo.com">ys.mihoyo.com</a></p>
+                    <p>国际服官网：<a href="https://genshin.hoyoverse.com">genshin.hoyoverse.com</a></p>
                 </li>
             </ul>
 
             <ul>
                 <li class="li_1">
-                    <img src="./img/icon/paimeng.webp" alt="派蒙">
+                    <img src="img/icon/paimeng.webp" alt="派蒙">
                     <p><a href="#">禁止跳转</a></p>
                 </li>
 
@@ -203,14 +201,14 @@
                     <p>性质：原神官方玩家交流</p>
                     <p>QQ群号：617323923</p>
                     <p>推荐度：&#10029&#10029&#10029&#10029&#10029</p>
-                    <p>国服官网：<a href="//ys.mihoyo.com">ys.mihoyo.com</a></p>
-                    <p>国际服官网：<a href="//genshin.hoyoverse.com">genshin.hoyoverse.com</a></p>
+                    <p>国服官网：<a href="https://ys.mihoyo.com">ys.mihoyo.com</a></p>
+                    <p>国际服官网：<a href="https://genshin.hoyoverse.com">genshin.hoyoverse.com</a></p>
                 </li>
             </ul>
 
             <ul>
                 <li class="li_1">
-                    <img src="./img/icon/paimeng.webp" alt="派蒙">
+                    <img src="img/icon/paimeng.webp" alt="派蒙">
                     <p><a href="#">禁止跳转</a></p>
                 </li>
 
@@ -219,14 +217,14 @@
                     <p>性质：原神官方玩家交流</p>
                     <p>QQ群号：592500429</p>
                     <p>推荐度：&#10029&#10029&#10029&#10029&#10029</p>
-                    <p>国服官网：<a href="//ys.mihoyo.com">ys.mihoyo.com</a></p>
-                    <p>国际服官网：<a href="//genshin.hoyoverse.com">genshin.hoyoverse.com</a></p>
+                    <p>国服官网：<a href="https://ys.mihoyo.com">ys.mihoyo.com</a></p>
+                    <p>国际服官网：<a href="https://genshin.hoyoverse.com">genshin.hoyoverse.com</a></p>
                 </li>
             </ul>
 
             <ul>
                 <li class="li_1">
-                    <img src="./img/icon/paimeng.webp" alt="派蒙">
+                    <img src="img/icon/paimeng.webp" alt="派蒙">
                     <p><a href="#">禁止跳转</a></p>
                 </li>
 
@@ -235,14 +233,14 @@
                     <p>性质：原神官方玩家交流</p>
                     <p>QQ群号：512047400</p>
                     <p>推荐度：&#10029&#10029&#10029&#10029&#10029</p>
-                    <p>国服官网：<a href="//ys.mihoyo.com">ys.mihoyo.com</a></p>
-                    <p>国际服官网：<a href="//genshin.hoyoverse.com">genshin.hoyoverse.com</a></p>
+                    <p>国服官网：<a href="https://ys.mihoyo.com">ys.mihoyo.com</a></p>
+                    <p>国际服官网：<a href="https://genshin.hoyoverse.com">genshin.hoyoverse.com</a></p>
                 </li>
             </ul>
 
             <ul>
                 <li class="li_1">
-                    <img src="./img/icon/paimeng.webp" alt="派蒙">
+                    <img src="img/icon/paimeng.webp" alt="派蒙">
                     <p><a href="#">禁止跳转</a></p>
                 </li>
 
@@ -251,14 +249,14 @@
                     <p>性质：原神官方玩家交流</p>
                     <p>QQ群号：1060406671</p>
                     <p>推荐度：&#10029&#10029&#10029&#10029&#10029</p>
-                    <p>国服官网：<a href="//ys.mihoyo.com">ys.mihoyo.com</a></p>
-                    <p>国际服官网：<a href="//genshin.hoyoverse.com">genshin.hoyoverse.com</a></p>
+                    <p>国服官网：<a href="https://ys.mihoyo.com">ys.mihoyo.com</a></p>
+                    <p>国际服官网：<a href="https://genshin.hoyoverse.com">genshin.hoyoverse.com</a></p>
                 </li>
             </ul>
 
             <ul>
                 <li class="li_1">
-                    <img src="./img/icon/paimeng.webp" alt="派蒙">
+                    <img src="img/icon/paimeng.webp" alt="派蒙">
                     <p><a href="#">禁止跳转</a></p>
                 </li>
 
@@ -267,14 +265,14 @@
                     <p>性质：原神官方玩家交流</p>
                     <p>QQ群号：1065215618</p>
                     <p>推荐度：&#10029&#10029&#10029&#10029&#10029</p>
-                    <p>国服官网：<a href="//ys.mihoyo.com">ys.mihoyo.com</a></p>
-                    <p>国际服官网：<a href="//genshin.hoyoverse.com">genshin.hoyoverse.com</a></p>
+                    <p>国服官网：<a href="https://ys.mihoyo.com">ys.mihoyo.com</a></p>
+                    <p>国际服官网：<a href="https://genshin.hoyoverse.com">genshin.hoyoverse.com</a></p>
                 </li>
             </ul>
 
             <ul>
                 <li class="li_1">
-                    <img src="./img/icon/paimeng.webp" alt="派蒙">
+                    <img src="img/icon/paimeng.webp" alt="派蒙">
                     <p><a href="#">禁止跳转</a></p>
                 </li>
 
@@ -283,14 +281,14 @@
                     <p>性质：原神官方玩家交流</p>
                     <p>QQ群号：597580157</p>
                     <p>推荐度：&#10029&#10029&#10029&#10029&#10029</p>
-                    <p>国服官网：<a href="//ys.mihoyo.com">ys.mihoyo.com</a></p>
-                    <p>国际服官网：<a href="//genshin.hoyoverse.com">genshin.hoyoverse.com</a></p>
+                    <p>国服官网：<a href="https://ys.mihoyo.com">ys.mihoyo.com</a></p>
+                    <p>国际服官网：<a href="https://genshin.hoyoverse.com">genshin.hoyoverse.com</a></p>
                 </li>
             </ul>
 
             <ul>
                 <li class="li_1">
-                    <img src="./img/icon/paimeng.webp" alt="派蒙">
+                    <img src="img/icon/paimeng.webp" alt="派蒙">
                     <p><a href="#">禁止跳转</a></p>
                 </li>
 
@@ -299,14 +297,14 @@
                     <p>性质：原神官方玩家交流</p>
                     <p>QQ群号：1073554160</p>
                     <p>推荐度：&#10029&#10029&#10029&#10029&#10029</p>
-                    <p>国服官网：<a href="//ys.mihoyo.com">ys.mihoyo.com</a></p>
-                    <p>国际服官网：<a href="//genshin.hoyoverse.com">genshin.hoyoverse.com</a></p>
+                    <p>国服官网：<a href="https://ys.mihoyo.com">ys.mihoyo.com</a></p>
+                    <p>国际服官网：<a href="https://genshin.hoyoverse.com">genshin.hoyoverse.com</a></p>
                 </li>
             </ul>
 
             <ul>
                 <li class="li_1">
-                    <img src="./img/icon/paimeng.webp" alt="派蒙">
+                    <img src="img/icon/paimeng.webp" alt="派蒙">
                     <p><a href="#">禁止跳转</a></p>
                 </li>
 
@@ -315,14 +313,14 @@
                     <p>性质：原神官方玩家交流</p>
                     <p>QQ群号：1060436102</p>
                     <p>推荐度：&#10029&#10029&#10029&#10029&#10029</p>
-                    <p>国服官网：<a href="//ys.mihoyo.com">ys.mihoyo.com</a></p>
-                    <p>国际服官网：<a href="//genshin.hoyoverse.com">genshin.hoyoverse.com</a></p>
+                    <p>国服官网：<a href="https://ys.mihoyo.com">ys.mihoyo.com</a></p>
+                    <p>国际服官网：<a href="https://genshin.hoyoverse.com">genshin.hoyoverse.com</a></p>
                 </li>
             </ul>
 
             <ul>
                 <li class="li_1">
-                    <img src="./img/icon/paimeng.webp" alt="派蒙">
+                    <img src="img/icon/paimeng.webp" alt="派蒙">
                     <p><a href="#">禁止跳转</a></p>
                 </li>
 
@@ -331,8 +329,8 @@
                     <p>性质：原神官方玩家交流</p>
                     <p>QQ群号：1038346920</p>
                     <p>推荐度：&#10029&#10029&#10029&#10029&#10029</p>
-                    <p>国服官网：<a href="//ys.mihoyo.com">ys.mihoyo.com</a></p>
-                    <p>国际服官网：<a href="//genshin.hoyoverse.com">genshin.hoyoverse.com</a></p>
+                    <p>国服官网：<a href="https://ys.mihoyo.com">ys.mihoyo.com</a></p>
+                    <p>国际服官网：<a href="https://genshin.hoyoverse.com">genshin.hoyoverse.com</a></p>
                 </li>
             </ul>
 
@@ -349,7 +347,7 @@
 
             <ul>
                 <li class="li_1">
-                    <img src="./img/icon/tianli.webp" alt="天理">
+                    <img src="img/icon/tianli.webp" alt="天理">
                     <p><a href="#">禁止跳转</a></p>
                 </li>
 
@@ -358,13 +356,13 @@
                     <p>性质：原神私服交流</p>
                     <p>QQ群号：794713715</p>
                     <p>推荐度：&#10029&#10029&#10029&#10029&#9734</p>
-                    <p>官网：<a href="//tianligame.com/">tianligame.com</a></p>
+                    <p>官网：<a href="https://tianligame.com/">tianligame.com</a></p>
                 </li>
             </ul>
 
             <ul>
                 <li class="li_1">
-                    <img src="./img/icon/tianli.webp" alt="天理">
+                    <img src="img/icon/tianli.webp" alt="天理">
                     <p><a href="#">禁止跳转</a></p>
                 </li>
 
@@ -373,13 +371,13 @@
                     <p>性质：原神私服交流</p>
                     <p>QQ群号：861560448</p>
                     <p>推荐度：&#10029&#10029&#10029&#10029&#9734</p>
-                    <p>官网：<a href="//tianligame.com/">tianligame.com</a></p>
+                    <p>官网：<a href="https://tianligame.com/">tianligame.com</a></p>
                 </li>
             </ul>
 
             <ul>
                 <li class="li_1">
-                    <img src="./img/icon/tianli.webp" alt="天理">
+                    <img src="img/icon/tianli.webp" alt="天理">
                     <p><a href="#">禁止跳转</a></p>
                 </li>
 
@@ -388,13 +386,13 @@
                     <p>性质：原神私服交流</p>
                     <p>QQ群号：115891254</p>
                     <p>推荐度：&#10029&#10029&#10029&#10029&#9734</p>
-                    <p>官网：<a href="//tianligame.com/">tianligame.com</a></p>
+                    <p>官网：<a href="https://tianligame.com/">tianligame.com</a></p>
                 </li>
             </ul>
 
             <ul>
                 <li class="li_1">
-                    <img src="./img/icon/tianli.webp" alt="天理">
+                    <img src="img/icon/tianli.webp" alt="天理">
                     <p><a href="#">禁止跳转</a></p>
                 </li>
 
@@ -403,13 +401,13 @@
                     <p>性质：原神私服交流</p>
                     <p>QQ群号：923078823</p>
                     <p>推荐度：&#10029&#10029&#10029&#10029&#9734</p>
-                    <p>官网：<a href="//tianligame.com/">tianligame.com</a></p>
+                    <p>官网：<a href="https://tianligame.com/">tianligame.com</a></p>
                 </li>
             </ul>
 
             <ul>
                 <li class="li_1">
-                    <img src="./img/icon/tianli.webp" alt="天理">
+                    <img src="img/icon/tianli.webp" alt="天理">
                     <p><a href="#">禁止跳转</a></p>
                 </li>
 
@@ -418,13 +416,13 @@
                     <p>性质：原神私服交流</p>
                     <p>QQ群号：763980140</p>
                     <p>推荐度：&#10029&#10029&#10029&#10029&#9734</p>
-                    <p>官网：<a href="//tianligame.com/">tianligame.com</a></p>
+                    <p>官网：<a href="https://tianligame.com/">tianligame.com</a></p>
                 </li>
             </ul>
 
             <ul>
                 <li class="li_1">
-                    <img src="./img/icon/tianli.webp" alt="天理">
+                    <img src="img/icon/tianli.webp" alt="天理">
                     <p><a href="#">禁止跳转</a></p>
                 </li>
 
@@ -433,13 +431,13 @@
                     <p>性质：原神私服交流</p>
                     <p>QQ群号：371135043</p>
                     <p>推荐度：&#10029&#10029&#10029&#10029&#9734</p>
-                    <p>官网：<a href="//tianligame.com/">tianligame.com</a></p>
+                    <p>官网：<a href="https://tianligame.com/">tianligame.com</a></p>
                 </li>
             </ul>
 
             <ul>
                 <li class="li_1">
-                    <img src="./img/icon/tianli.webp" alt="天理">
+                    <img src="img/icon/tianli.webp" alt="天理">
                     <p><a href="#">禁止跳转</a></p>
                 </li>
 
@@ -448,13 +446,13 @@
                     <p>性质：原神私服交流</p>
                     <p>QQ群号：853729260</p>
                     <p>推荐度：&#10029&#10029&#10029&#10029&#9734</p>
-                    <p>官网：<a href="//tianligame.com/">tianligame.com</a></p>
+                    <p>官网：<a href="https://tianligame.com/">tianligame.com</a></p>
                 </li>
             </ul>
 
             <ul>
                 <li class="li_1">
-                    <img src="./img/icon/tianli.webp" alt="天理">
+                    <img src="img/icon/tianli.webp" alt="天理">
                     <p><a href="#">禁止跳转</a></p>
                 </li>
 
@@ -463,13 +461,13 @@
                     <p>性质：原神私服交流</p>
                     <p>QQ群号：715320773</p>
                     <p>推荐度：&#10029&#10029&#10029&#10029&#9734</p>
-                    <p>官网：<a href="//tianligame.com/">tianligame.com</a></p>
+                    <p>官网：<a href="https://tianligame.com/">tianligame.com</a></p>
                 </li>
             </ul>
 
             <ul>
                 <li class="li_1">
-                    <img src="./img/icon/tianli.webp" alt="天理">
+                    <img src="img/icon/tianli.webp" alt="天理">
                     <p><a href="#">禁止跳转</a></p>
                 </li>
 
@@ -478,13 +476,13 @@
                     <p>性质：原神私服交流</p>
                     <p>QQ群号：246729954</p>
                     <p>推荐度：&#10029&#10029&#10029&#10029&#9734</p>
-                    <p>官网：<a href="//tianligame.com/">tianligame.com</a></p>
+                    <p>官网：<a href="https://tianligame.com/">tianligame.com</a></p>
                 </li>
             </ul>
 
             <ul>
                 <li class="li_1">
-                    <img src="./img/icon/tianli.webp" alt="天理">
+                    <img src="img/icon/tianli.webp" alt="天理">
                     <p><a href="#">禁止跳转</a></p>
                 </li>
 
@@ -493,7 +491,7 @@
                     <p>性质：原神私服交流</p>
                     <p>QQ群号：255160800</p>
                     <p>推荐度：&#10029&#10029&#10029&#10029&#9734</p>
-                    <p>官网：<a href="//tianligame.com/">tianligame.com</a></p>
+                    <p>官网：<a href="https://tianligame.com/">tianligame.com</a></p>
                 </li>
             </ul>
 
@@ -510,8 +508,8 @@
 
             <ul>
                 <li class="li_1">
-                    <img src="./img/icon/keqing.webp" alt="刻晴">
-                    <p><a href="//jq.qq.com/?_wv=1027&k=GE0Z9NaU">加入该群</a></p>
+                    <img src="img/icon/keqing.webp" alt="刻晴">
+                    <p><a href="https://jq.qq.com/?_wv=1027&k=GE0Z9NaU">加入该群</a></p>
                 </li>
 
                 <li class="li_2">
@@ -524,8 +522,8 @@
 
             <ul>
                 <li class="li_1">
-                    <img src="./img/icon/scoutingLegion.webp" alt="SCOUTING LEGION">
-                    <p><a href="//jq.qq.com/?_wv=1027&k=uhIGheZd">加入该群</a></p>
+                    <img src="img/icon/scoutingLegion.webp" alt="SCOUTING LEGION">
+                    <p><a href="https://jq.qq.com/?_wv=1027&k=uhIGheZd">加入该群</a></p>
                 </li>
 
                 <li class="li_2">
@@ -538,8 +536,8 @@
 
             <ul>
                 <li class="li_1">
-                    <img src="./img/icon/daweige.webp" alt="大伟哥">
-                    <p><a href="//jq.qq.com/?_wv=1027&k=kPXKK7QP">加入该群</a></p>
+                    <img src="img/icon/daweige.webp" alt="大伟哥">
+                    <p><a href="https://jq.qq.com/?_wv=1027&k=kPXKK7QP">加入该群</a></p>
                 </li>
 
                 <li class="li_2">
@@ -552,8 +550,8 @@
 
             <ul>
                 <li class="li_1">
-                    <img src="./img/icon/paimeng.webp" alt="派蒙">
-                    <p><a href="//jq.qq.com/?_wv=1027&k=3qqgXHOX">加入该群</a></p>
+                    <img src="img/icon/paimeng.webp" alt="派蒙">
+                    <p><a href="https://jq.qq.com/?_wv=1027&k=3qqgXHOX">加入该群</a></p>
                 </li>
 
                 <li class="li_2">
@@ -566,8 +564,8 @@
 
             <ul>
                 <li class="li_1">
-                    <img src="./img/icon/James.webp" alt="雷电将军">
-                    <p><a href="//jq.qq.com/?_wv=1027&k=sd44MdNQ">加入该群</a></p>
+                    <img src="img/icon/James.webp" alt="雷电将军">
+                    <p><a href="https://jq.qq.com/?_wv=1027&k=sd44MdNQ">加入该群</a></p>
                 </li>
 
                 <li class="li_2">
@@ -580,8 +578,8 @@
 
             <ul>
                 <li class="li_1">
-                    <img src="./img/icon/James.webp" alt="雷电将军">
-                    <p><a href="//jq.qq.com/?_wv=1027&k=TEMAyuIK">加入该群</a></p>
+                    <img src="img/icon/James.webp" alt="雷电将军">
+                    <p><a href="https://jq.qq.com/?_wv=1027&k=TEMAyuIK">加入该群</a></p>
                 </li>
 
                 <li class="li_2">
@@ -594,8 +592,8 @@
 
             <ul>
                 <li class="li_1">
-                    <img src="./img/icon/leishen.webp" alt="雷电将军">
-                    <p><a href="//jq.qq.com/?_wv=1027&k=dwLNaXJq">加入该群</a></p>
+                    <img src="img/icon/leishen.webp" alt="雷电将军">
+                    <p><a href="https://jq.qq.com/?_wv=1027&k=dwLNaXJq">加入该群</a></p>
                 </li>
 
                 <li class="li_2">
@@ -608,7 +606,7 @@
 
             <ul>
                 <li class="li_1">
-                    <img src="./img/icon/xiao.webp" alt="魈">
+                    <img src="img/icon/xiao.webp" alt="魈">
                     <p><a href="#">禁止跳转</a></p>
                 </li>
 
@@ -622,8 +620,8 @@
 
             <ul>
                 <li class="li_1">
-                    <img src="./img/icon/tuanzi.webp" alt="团子">
-                    <p><a href="//jq.qq.com/?_wv=1027&k=YUv8diBf">加入该群</a></p>
+                    <img src="img/icon/tuanzi.webp" alt="团子">
+                    <p><a href="https://jq.qq.com/?_wv=1027&k=YUv8diBf">加入该群</a></p>
                 </li>
 
                 <li class="li_2">
@@ -647,8 +645,8 @@
 
             <ul>
                 <li class="li_1">
-                    <img src="./img/icon/paimeng.webp" alt="派蒙">
-                    <p><a href="//jq.qq.com/?_wv=1027&k=pqRlFDKX">加入该群</a></p>
+                    <img src="img/icon/paimeng.webp" alt="派蒙">
+                    <p><a href="https://jq.qq.com/?_wv=1027&k=pqRlFDKX">加入该群</a></p>
                 </li>
 
                 <li class="li_2">
@@ -661,8 +659,8 @@
 
             <ul>
                 <li class="li_1">
-                    <img src="./img/icon/YuanShen_Group-photo.webp" alt="原神人物合照">
-                    <p><a href="//jq.qq.com/?_wv=1027&k=6Z2A4lNQ">加入该群</a></p>
+                    <img src="img/icon/YuanShen_Group-photo.webp" alt="原神人物合照">
+                    <p><a href="https://jq.qq.com/?_wv=1027&k=6Z2A4lNQ">加入该群</a></p>
                 </li>
 
                 <li class="li_2">
@@ -686,8 +684,8 @@
 
             <ul>
                 <li class="li_1">
-                    <img src="./img/icon/ying.webp" alt="荧">
-                    <p><a href="//pd.qq.com/s/a5xsvyfgl">进入频道</a></p>
+                    <img src="img/icon/ying.webp" alt="荧">
+                    <p><a href="https://pd.qq.com/s/a5xsvyfgl">进入频道</a></p>
                 </li>
 
                 <li class="li_2">
@@ -700,8 +698,8 @@
 
             <ul>
                 <li class="li_1">
-                    <img src="./img/icon/tianli.webp" alt="天理">
-                    <p><a href="//pd.qq.com/s/8e1f9fizg">进入频道</a></p>
+                    <img src="img/icon/tianli.webp" alt="天理">
+                    <p><a href="https://pd.qq.com/s/8e1f9fizg">进入频道</a></p>
                 </li>
 
                 <li class="li_2">
@@ -709,14 +707,14 @@
                     <p>性质：原神SF技术交流</p>
                     <p>频道号：8966zdf6v7</p>
                     <p>推荐度：&#10029&#10029&#10029&#10029&#9734</p>
-                    <p>官网：<a href="//tianligame.com/">tianligame.com</a></p>
+                    <p>官网：<a href="https://tianligame.com/">tianligame.com</a></p>
                 </li>
             </ul>
 
             <ul>
                 <li class="li_1">
-                    <img src="./img/icon/wanye.webp" alt="万叶">
-                    <p><a href="//pd.qq.com/s/bpeyxqp4k">进入频道</a></p>
+                    <img src="img/icon/wanye.webp" alt="万叶">
+                    <p><a href="https://pd.qq.com/s/bpeyxqp4k">进入频道</a></p>
                 </li>
 
                 <li class="li_2">
@@ -724,14 +722,14 @@
                     <p>性质：原神SF技术交流</p>
                     <p>频道号：gvc13hns2l</p>
                     <p>推荐度：&#10029&#10029&#10029&#10029&#9734</p>
-                    <p>官网：<a href="//kazuhahub.com/">kazuhahub.com</a></p>
+                    <p>官网：<a href="https://kazuhahub.com/">kazuhahub.com</a></p>
                 </li>
             </ul>
 
             <ul>
                 <li class="li_1">
-                    <img src="./img/icon/James.webp" alt="雷电将军">
-                    <p><a href="//pd.qq.com/s/wipepdlf">进入频道</a></p>
+                    <img src="img/icon/James.webp" alt="雷电将军">
+                    <p><a href="https://pd.qq.com/s/wipepdlf">进入频道</a></p>
                 </li>
 
                 <li class="li_2">
@@ -755,8 +753,8 @@
 
             <ul>
                 <li class="li_1">
-                    <img src="./img/icon/xiaobao.webp" alt="小宝">
-                    <p><a href="//jq.qq.com/?_wv=1027&k=gUoERs0Q">加入该群</a></p>
+                    <img src="img/icon/xiaobao.webp" alt="小宝">
+                    <p><a href="https://jq.qq.com/?_wv=1027&k=gUoERs0Q">加入该群</a></p>
                 </li>
 
                 <li class="li_2">
@@ -769,8 +767,8 @@
 
             <ul>
                 <li class="li_1">
-                    <img src="./img/icon/Grasscutter.webp" alt="割草机">
-                    <p><a href="//jq.qq.com/?_wv=1027&k=xcCbyC5Y">加入该群</a></p>
+                    <img src="img/icon/Grasscutter.webp" alt="割草机">
+                    <p><a href="https://jq.qq.com/?_wv=1027&k=xcCbyC5Y">加入该群</a></p>
                 </li>
 
                 <li class="li_2">
@@ -794,8 +792,8 @@
 
             <ul>
                 <li class="li_1">
-                    <img src="./img/icon/wanye.webp" alt="万叶">
-                    <p><a href="//discord.gg/YpZP6X5Kmx">加入频道</a></p>
+                    <img src="img/icon/wanye.webp" alt="万叶">
+                    <p><a href="https://discord.gg/YpZP6X5Kmx">加入频道</a></p>
                 </li>
 
                 <li class="li_2">
@@ -803,14 +801,14 @@
                     <p>频道名：Genshin-RK</p>
                     <p>性质：原神私服交流</p>
                     <p>推荐度：&#10029&#10029&#10029&#10029&#9734</p>
-                    <p>官网：<a href="//kazuhahub.com/">kazuhahub.com</a></p>
+                    <p>官网：<a href="https://kazuhahub.com/">kazuhahub.com</a></p>
                 </li>
             </ul>
 
             <ul>
                 <li class="li_1">
-                    <img src="./img/icon/tianli-changqv.webp" alt="天理尝蛆">
-                    <p><a href="//discord.gg/tianli">加入频道</a></p>
+                    <img src="img/icon/tianli-changqv.webp" alt="天理尝蛆">
+                    <p><a href="https://discord.gg/tianli">加入频道</a></p>
                 </li>
 
                 <li class="li_2">
@@ -818,14 +816,14 @@
                     <p>频道名：天理尝蛆体验服 - TianliPS</p>
                     <p>性质：原神私服交流</p>
                     <p>推荐度：&#10029&#10029&#10029&#10029&#9734</p>
-                    <p>官网：<a href="//tianligame.com/">tianligame.com</a></p>
+                    <p>官网：<a href="https://tianligame.com/">tianligame.com</a></p>
                 </li>
             </ul>
 
             <ul>
                 <li class="li_1">
-                    <img src="./img/icon/qiqi.webp" alt="七七">
-                    <p><a href="//kook.top/S1s4Eh">加入频道</a></p>
+                    <img src="img/icon/qiqi.webp" alt="七七">
+                    <p><a href="https://kook.top/S1s4Eh">加入频道</a></p>
                 </li>
 
                 <li class="li_2">
@@ -833,14 +831,14 @@
                     <p>频道名：七七</p>
                     <p>性质：原神私服交流</p>
                     <p>推荐度：&#10029&#10029&#10029&#10029&#9734</p>
-                    <p>官网：<a href="//www.yuanshen.edu.rs">yuanshen.edu.rs</a></p>
+                    <p>官网：<a href="https://www.yuanshen.edu.rs">yuanshen.edu.rs</a></p>
                 </li>
             </ul>
 
             <ul>
                 <li class="li_1">
-                    <img src="./img/icon/eggplant.webp" alt="茄子">
-                    <p><a href="//discord.gg/akebi">加入频道</a></p>
+                    <img src="img/icon/eggplant.webp" alt="茄子">
+                    <p><a href="https://discord.gg/akebi">加入频道</a></p>
                 </li>
 
                 <li class="li_2">
@@ -853,8 +851,8 @@
 
             <ul>
                 <li class="li_1">
-                    <img src="./img/icon/Asuna.webp" alt="派蒙">
-                    <p><a href="//jq.qq.com/?_wv=1027&k=pqRlFDKX">加入该群</a></p>
+                    <img src="img/icon/Asuna.webp" alt="派蒙">
+                    <p><a href="https://jq.qq.com/?_wv=1027&k=pqRlFDKX">加入该群</a></p>
                 </li>
 
                 <li class="li_2">
@@ -868,7 +866,7 @@
 
             <ul>
                 <li class="li_1">
-                    <img src="./img/icon/yanfei.webp" alt="烟绯">
+                    <img src="img/icon/yanfei.webp" alt="烟绯">
                     <p><a href="#">禁止跳转</a></p>
                 </li>
 
@@ -894,8 +892,8 @@
 
             <ul>
                 <li class="li_1">
-                    <img src="./img/icon/hutao1.webp" alt="胡桃">
-                    <p><a href="//jq.qq.com/?_wv=1027&k=zM1JYMIJ">加入该群</a></p>
+                    <img src="img/icon/hutao1.webp" alt="胡桃">
+                    <p><a href="https://jq.qq.com/?_wv=1027&k=zM1JYMIJ">加入该群</a></p>
                 </li>
 
                 <li class="li_2">
@@ -909,8 +907,8 @@
 
             <ul>
                 <li class="li_1">
-                    <img src="./img/icon/keli1.webp" alt="可莉">
-                    <p><a href="//jq.qq.com/?_wv=1027&k=RHAQxS6Y">加入该群</a></p>
+                    <img src="img/icon/keli1.webp" alt="可莉">
+                    <p><a href="https://jq.qq.com/?_wv=1027&k=RHAQxS6Y">加入该群</a></p>
                 </li>
 
                 <li class="li_2">
@@ -924,8 +922,8 @@
 
             <ul>
                 <li class="li_1">
-                    <img src="./img/icon/leishen1.webp" alt="雷电将军胸部拔剑">
-                    <p><a href="//jq.qq.com/?_wv=1027&k=kGVXD5dY">加入该群</a></p>
+                    <img src="img/icon/leishen1.webp" alt="雷电将军胸部拔剑">
+                    <p><a href="https://jq.qq.com/?_wv=1027&k=kGVXD5dY">加入该群</a></p>
                 </li>
 
                 <li class="li_2">
@@ -939,8 +937,8 @@
 
             <ul>
                 <li class="li_1">
-                    <img src="./img/icon/paimeng1.webp" alt="派蒙">
-                    <p><a href="//jq.qq.com/?_wv=1027&k=CfDsuuRU">加入该群</a></p>
+                    <img src="img/icon/paimeng1.webp" alt="派蒙">
+                    <p><a href="https://jq.qq.com/?_wv=1027&k=CfDsuuRU">加入该群</a></p>
                 </li>
 
                 <li class="li_2">
@@ -964,79 +962,48 @@
         </script>
     <div class="box_bottom_1">
         <div class="bottom_icon">
-            <a href="//space.bilibili.com/1198037522/" title="作者B站主页">
-                <svg t="1672995899403" class="icon" viewBox="0 0 1129 1024" version="1.1" xmlns="//www.w3.org/2000/svg"
-                    p-id="1917" width="200" height="200">
-                    <path
-                        d="M234.909 9.656a80.468 80.468 0 0 1 68.398 0 167.374 167.374 0 0 1 41.843 30.578l160.937 140.82h115.07l160.936-140.82a168.983 168.983 0 0 1 41.843-30.578A80.468 80.468 0 0 1 930.96 76.445a80.468 80.468 0 0 1-17.703 53.914 449.818 449.818 0 0 1-35.406 32.187 232.553 232.553 0 0 1-22.531 18.508h100.585a170.593 170.593 0 0 1 118.289 53.109 171.397 171.397 0 0 1 53.914 118.288v462.693a325.897 325.897 0 0 1-4.024 70.007 178.64 178.64 0 0 1-80.468 112.656 173.007 173.007 0 0 1-92.539 25.75h-738.7a341.186 341.186 0 0 1-72.421-4.024A177.835 177.835 0 0 1 28.91 939.065a172.202 172.202 0 0 1-27.36-92.539V388.662a360.498 360.498 0 0 1 0-66.789A177.03 177.03 0 0 1 162.487 178.64h105.414c-16.899-12.07-31.383-26.555-46.672-39.43a80.468 80.468 0 0 1-25.75-65.984 80.468 80.468 0 0 1 39.43-63.57M216.4 321.873a80.468 80.468 0 0 0-63.57 57.937 108.632 108.632 0 0 0 0 30.578v380.615a80.468 80.468 0 0 0 55.523 80.469 106.218 106.218 0 0 0 34.601 5.632h654.208a80.468 80.468 0 0 0 76.444-47.476 112.656 112.656 0 0 0 8.047-53.109v-354.06a135.187 135.187 0 0 0 0-38.625 80.468 80.468 0 0 0-52.304-54.719 129.554 129.554 0 0 0-49.89-7.242H254.22a268.764 268.764 0 0 0-37.82 0z m0 0"
-                        fill="#20B0E3" p-id="1918"></path>
-                    <path
-                        d="M348.369 447.404a80.468 80.468 0 0 1 55.523 18.507 80.468 80.468 0 0 1 28.164 59.547v80.468a80.468 80.468 0 0 1-16.094 51.5 80.468 80.468 0 0 1-131.968-9.656 104.609 104.609 0 0 1-10.46-54.719v-80.468a80.468 80.468 0 0 1 70.007-67.593z m416.02 0a80.468 80.468 0 0 1 86.102 75.64v80.468a94.148 94.148 0 0 1-12.07 53.11 80.468 80.468 0 0 1-132.773 0 95.757 95.757 0 0 1-12.875-57.133V519.02a80.468 80.468 0 0 1 70.007-70.812z m0 0"
-                        fill="#20B0E3" p-id="1919"></path>
-                </svg>
+            <a href="https://space.bilibili.com/1198037522/" title="B站主页">
+                <i class="fa-brands fa-bilibili"></i>
             </a>
-            <a href="mailto:adingapkgg@outlook.com" title="作者邮箱">
-                <svg t="1672997720223" class="icon" viewBox="0 0 1472 1024" version="1.1" xmlns="//www.w3.org/2000/svg"
-                    p-id="22402" width="200" height="200">
-                    <path
-                        d="M1446.141124 1.817888H26.577978A26.577978 26.577978 0 0 0 0 28.395865v967.219775a26.577978 26.577978 0 0 0 26.577978 26.577978h1119.208988a26.577978 26.577978 0 1 0 0-53.155955H97.406562l482.568629-421.726921L718.871011 668.706517a26.520449 26.520449 0 0 0 34.977079 0l138.907326-121.38427 482.580135 421.726922h-128.55227a26.577978 26.577978 0 1 0 0 53.155955h199.357843a26.577978 26.577978 0 0 0 26.577977-26.577978V28.38436a26.577978 26.577978 0 0 0-26.577977-26.577978z m-26.577978 935.280179L933.15164 512l426.915956-373.10418a26.577978 26.577978 0 0 0-34.977079-40.028045L736.359551 613.387506 402.696629 321.789124a26.577978 26.577978 0 0 0-34.977078 40.028045L539.590472 512 53.155955 937.109573V86.913438l231.723146 202.498877c5.039461 4.406652 11.275506 6.569708 17.488539 6.569707a26.577978 26.577978 0 0 0 17.500045-46.597752L97.372045 54.985348H1419.563146v882.124225z"
-                        fill="#000000" p-id="22403"></path>
-                </svg>
+            <a href="mailto:adingapkgg@outlook.com" title="邮箱">
+                <i class="fa-solid fa-envelope"></i>
             </a>
-            <a href="//github.com/AdingApkgg/" title="作者GitHub主页">
-                <svg t="1672996936918" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="//www.w3.org/2000/svg"
-                    p-id="4005" width="200" height="200">
-                    <path
-                        d="M511.957333 21.333333C241.024 21.333333 21.333333 240.981333 21.333333 512c0 216.832 140.544 400.725333 335.573334 465.664 24.490667 4.394667 32.256-10.069333 32.256-23.082667 0-11.690667 0.256-44.245333 0-85.205333-136.448 29.610667-164.736-64.64-164.736-64.64-22.314667-56.704-54.4-71.765333-54.4-71.765333-44.586667-30.464 3.285333-29.824 3.285333-29.824 49.194667 3.413333 75.178667 50.517333 75.178667 50.517333 43.776 75.008 114.816 53.333333 142.762666 40.789333 4.522667-31.658667 17.152-53.376 31.189334-65.536-108.970667-12.458667-223.488-54.485333-223.488-242.602666 0-53.546667 19.114667-97.322667 50.517333-131.669334-5.034667-12.330667-21.930667-62.293333 4.778667-129.834666 0 0 41.258667-13.184 134.912 50.346666a469.802667 469.802667 0 0 1 122.88-16.554666c41.642667 0.213333 83.626667 5.632 122.88 16.554666 93.653333-63.488 134.784-50.346667 134.784-50.346666 26.752 67.541333 9.898667 117.504 4.864 129.834666 31.402667 34.346667 50.474667 78.122667 50.474666 131.669334 0 188.586667-114.730667 230.016-224.042666 242.090666 17.578667 15.232 33.578667 44.672 33.578666 90.453334v135.850666c0 13.141333 7.936 27.605333 32.853334 22.869334C862.250667 912.597333 1002.666667 728.746667 1002.666667 512 1002.666667 240.981333 783.018667 21.333333 511.957333 21.333333z"
-                        p-id="4006"></path>
-                </svg>
+            <a href="https://github.com/AdingApkgg/" title="GitHub">
+                <i class="fa-brands fa-github"></i>
             </a>
-            <a href="//wpa.qq.com/msgrd?v=3&uin=1679456234&site=qq&menu=yes&jumpflag=1" title="作者QQ">
-                <svg t="1672996517173" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="//www.w3.org/2000/svg"
-                    p-id="2844" width="200" height="200">
-                    <path
-                        d="M824.8 613.2c-16-51.4-34.4-94.6-62.7-165.3C766.5 262.2 689.3 112 511.5 112 331.7 112 256.2 265.2 261 447.9c-28.4 70.8-46.7 113.7-62.7 165.3-34 109.5-23 154.8-14.6 155.8 18 2.2 70.1-82.4 70.1-82.4 0 49 25.2 112.9 79.8 159-26.4 8.1-85.7 29.9-71.6 53.8 11.4 19.3 196.2 12.3 249.5 6.3 53.3 6 238.1 13 249.5-6.3 14.1-23.8-45.3-45.7-71.6-53.8 54.6-46.2 79.8-110.1 79.8-159 0 0 52.1 84.6 70.1 82.4 8.5-1.1 19.5-46.4-14.5-155.8z"
-                        p-id="2845" fill="#ffffff"></path>
-                </svg>
+            <a href="https://wpa.qq.com/msgrd?v=3&uin=1679456234&site=qq&menu=yes&jumpflag=1" title="QQ">
+                <i class="fa-brands fa-qq"></i>
             </a>
-            <span class="reward">
-                <span id="rewardBtn" onclick="rewardUi()" title="打赏作者"><svg t="1673038797488" class="icon"
-                        id="reward_svg" viewBox="0 0 1024 1024" version="1.1" xmlns="//www.w3.org/2000/svg" p-id="22824"
-                        width="200" height="200">
-                        <path
-                            d="M65.36 597.21c12-6 27.93-7.23 43.23-4.45C178 605.38 211 672.64 268.46 706c57.28 33.31 143.3 15.13 207.34 14l102.71-76.3-157.91-43.11c-18.78-2.07-32.9-18-32.83-36 0.06-16.74 12.28-31.67 29.35-35.22h325.74a1182.74 1182.74 0 0 0 61.63 76.3A1193.41 1193.41 0 0 0 977.63 767L801.55 954.86 681.23 852.15l-405 2.93c-11.9 0.09-47.63-43.3-57.26-52.05l-65.44-59.49q-30.67-27.89-61.35-55.77C77.47 674.33 52.69 660.44 47.74 640c-5.27-21.76 3.26-35.65 17.62-42.79zM517.32 368.57c0-58.33-45.53-136.32-105.13-172.4H281.88c-59.59 36.09-105.13 114.08-105.13 172.4a122.34 122.34 0 0 0 17.15 62.12c-3.14 3.64-4.81 7.45-4.81 11.38 0 12.48 16.84 23.8 44.22 32.12 30.15 22.57 70 36.3 113.73 36.3s83.58-13.73 113.73-36.3c27.38-8.32 44.22-19.65 44.22-32.12 0-3.93-1.67-7.74-4.81-11.38a122.34 122.34 0 0 0 17.14-62.12z m-98.81-49.39V337H387l-7.17 14.05h38.68v17.81h-48.14v59.57h-46.53v-59.56h-48.55v-17.82h39.09L306.67 337h-31.38v-17.81h21.64l-21.64-41h51.26l20.29 55.12 21.37-55.12h50.58l-21.77 41zM292.33 182.66c0 5 4.32 9 9.64 9h90.13c5.33 0 9.64-4 9.64-9s-4.32-9-9.64-9H302c-5.36-0.04-9.67 4.01-9.67 9zM379.91 170c5.33 0 9.64-4 9.64-9s-4.32-9-9.64-9h-65.75c-5.33 0-9.64 4-9.64 9s4.32 9 9.64 9zM320.63 146.65h52.09c8.81-4.57 27.83-16 37.59-37.93 2-4.6 11.23-25.23 2.89-32.51-8.62-7.54-24.2 9.47-52.07 6.79-22.49-2.18-24.87-14.49-49.18-14.9-5.19-0.09-28.15-0.48-34.71 12.19-3 5.85-1.45 12.34 0 16.26z"
-                            fill="#ffffff" p-id="22825"></path>
-                    </svg></span>
-
-                <ul id="rewardUl" class="reward_ul">
-                    <li>
-                        <p>微信收款码</p>
-                        <a href="./img/reward/WX.webp" target="_blank"><img src="./img/reward/WX.webp" alt="微信支付打赏"></a>
-                    </li>
-                    <li>
-                        <p class="reward_title_top">打赏</p>
-                        <span id="exitIconReward" onclick="rewardUi()"><i class="fas fa-times"></i></span>
-                        <p>支付宝收款码</p>
-                        <a href="./img/reward/ZFB.webp" target="_blank"><img src="./img/reward/ZFB.webp"
-                                alt="支付宝支付打赏"></a>
-                        <p class="reward_title_bottom">什么？！ 真的要给我打赏吗？真的吗？！ 谢谢！！！ 感谢支持。</p>
-                    </li>
-                    <li>
-                        <p>QQ收款码</p>
-                        <a href="./img/reward/QQ.webp" target="_blank"><img src="./img/reward/QQ.webp" alt="QQ支付打赏"></a>
-                    </li>
-                </ul>
-            </span>
+            <a id="rewardBtn" onclick="rewardUi()" title="打赏"><i class="fa-solid fa-thumbs-up"></i></a>
         </div>
-        <p>by：<a href="//saop.cc/">Asuna</a> QQ：<a
-                href="//wpa.qq.com/msgrd?v=3&uin=1679456234&site=qq&menu=yes&jumpflag=1">1679456234</a></p>
-        <p>如上是联系方式，如果侵权请联系删除。</p>
-        <p>访问量<span id="busuanzi_value_site_pv"></span>，访客数<span id="busuanzi_value_site_uv"></span></p>
+        <p><i class="fa-solid fa-copyright"></i>&nbsp;<a href="https://saop.cc/" target="_blank">Asuna</a></p>
+        <p>访问量&nbsp;<span id="busuanzi_value_site_pv">null</span>&nbsp;次，访客数&nbsp;<span
+                id="busuanzi_value_site_uv">null</span>&nbsp;次</p>
 
     </div>
 
+    <div class="reward">
+        <ul id="rewardUl" class="reward_ul">
+            <li>
+                <p>微信收款码</p>
+                <a href="img/reward/WX.webp" target="_blank"><img src="img/reward/WX.webp" alt="微信支付打赏"></a>
+            </li>
+            <li>
+                <p class="reward_title_top">打赏</p>
+                <span id="exitIconReward" onclick="rewardUi()"><i class="fa-solid fa-xmark"></i></span>
+                <p>支付宝收款码</p>
+                <a href="img/reward/ZFB.webp" target="_blank"><img src="img/reward/ZFB.webp" alt="支付宝支付打赏"></a>
+                <p class="reward_title_bottom">什么？！ 真的要给我打赏吗？真的吗？！ 谢谢！！！ 感谢支持。</p>
+            </li>
+            <li>
+                <p>QQ收款码</p>
+                <a href="img/reward/QQ.webp" target="_blank"><img src="img/reward/QQ.webp" alt="QQ支付打赏"></a>
+            </li>
+        </ul>
+    </div>
+
     <!-- 进入网页音效 -->
-    <audio class="audio_huanying" id="bgMusic" src="./audio/huanying.wav" autoplay preload="auto"></audio>
+    <audio class="audio_huanying" id="bgMusic" src="audio/huanying.wav" autoplay preload="auto"></audio>
 
     <!-- 控制“进入网页音效"默认音量 -->
     <script>
@@ -1044,19 +1011,20 @@
         audio.volume = 0.2;
     </script>
     <!-- 置顶按钮 -->
-    <div class="topa" id="btnTop"><i style='font-size:24px' class='fas'>&#xf102;</i>
+    <div class="topa" id="btnTop"><i class="fa-solid fa-caret-up"></i>
     </div>
 
     <!-- 插入Aplayer播放器 -->
     <div id='aplayer'></div>
 
     <!-- 引入Aplayer播放器JS文件 -->
-    <script src="//registry.npmmirror.com/aplayer/latest/files/dist/APlayer.min.js" type="text/javascript"></script>
+    <script src="https://registry.npmmirror.com/aplayer/latest/files/dist/APlayer.min.js"
+        type="text/javascript"></script>
 
     <script src="js/main.js"></script>
 
     <!-- 引入不算子计数JS -->
-    <script async src="//registry.npmmirror.com/busuanzi/latest/files/bsz.pure.mini.js"></script>
+    <script async src="https://registry.npmmirror.com/busuanzi/latest/files/bsz.pure.mini.js"></script>
 
     <div id="mask"></div>
 </body>
