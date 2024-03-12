@@ -1091,43 +1091,42 @@ p {
     background: rgba(255, 255, 255, .75);
 }
 
-#navTop span {
-    float: left;
-    line-height: 60px;
-    color: #000000;
-    font-weight: 300;
-    font-size: 2.4em;
-    margin: 0 32px;
+#navTitle h2,
+#navTag ul li a {
+    color: #282828;
+    font-weight: bold;
+    font-size: 2rem;
+    margin: 0 20px;
 }
 
-#navTop span:hover {
+#navTitle h2:hover,
+#navTag ul li a:hover {
     color: #37daff;
     cursor: pointer;
 }
 
-#navList {
-    float: right;
-    position: absolute;
-    right: 5px;
+#navTop section {
+    box-sizing: border-box;
+    width: 50%;
     height: 100%;
-    width: 300px;
+    line-height: 60px;
 }
 
-#navList ul {
+#navTop #navTitle {
+    float: left;
+}
+
+#navTop #navTag {
+    float: right;
+}
+
+#navTop #navTag ul {
     list-style: none;
     float: right;
-    height: 100%;
 }
 
-#navList ul li {
+#navTop #navTag ul li {
     float: left;
-    margin: 0 5px;
-    height: 100%;
-}
-
-#navList ul li a {
-    line-height: 60px;
-    font-weight: bold;
 }
 
 .giscus {
@@ -1215,6 +1214,14 @@ p {
     p {
         font-size: 10px;
         font-weight: 500;
+    }
+
+    #navTitle h2 {
+        margin: 0 0 0 15px;
+    }
+
+    #navTag ul li a {
+        margin: 0 15px 0 0;
     }
 
     .h1_title_1 {
@@ -1313,14 +1320,6 @@ p {
         font-size: 2em;
         width: 100%;
         height: 25px;
-    }
-
-    #navTop span {
-        margin: 0;
-        width: 100%;
-        font-weight: 300;
-        font-size: 2.4em;
-        text-align: center;
     }
 
     .giscus-frame {
