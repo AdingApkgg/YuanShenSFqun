@@ -1125,22 +1125,6 @@ p {
     float: left;
 }
 
-.giscus {
-    width: 100%;
-    height: auto;
-    display: inline-flex;
-}
-
-.giscus-frame {
-    background: rgb(255, 255, 255);
-    width: 70%;
-    margin: 15px auto;
-    border: rgb(90, 90, 90) 3px solid;
-    border-radius: 6px;
-    padding: 15px;
-    box-shadow: rgba(51, 51, 51, 0.3) 0 0 20px 5px;
-}
-
 #exitIconReward {
     position: absolute;
     display: flex;
@@ -1316,15 +1300,6 @@ p {
         font-size: 2em;
         width: 100%;
         height: 25px;
-    }
-
-    .giscus-frame {
-        width: 100%;
-        margin: 10px 0;
-        border: rgb(90, 90, 90) 2px solid;
-        border-radius: 4px;
-        padding: 10px;
-        box-shadow: rgba(51, 51, 51, 0.3) 0 0 10px 3px;
     }
 
     #exitIconReward {
